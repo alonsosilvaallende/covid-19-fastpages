@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "",
-            "content": "data_raw = pd.read_csv(&quot;https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto3/CasosTotalesCumulativo.csv&quot;, index_col=&#39;Region&#39;) .",
+            "content": "Bajamos los datos del Ministerio de Ciencia . data_raw = pd.read_csv( &quot;https://raw.githubusercontent.com/MinCiencia/Datos-COVID19/master/output/producto3/CasosTotalesCumulativo.csv&quot;, index_col=&#39;Region&#39;) . fig, ax = plt.subplots(figsize=(14,7)) data_raw[:-1].T.plot(ax=ax, kind=&quot;bar&quot;, stacked=True) for i, val in enumerate(data_raw.loc[&#39;Total&#39;]): ax.text(i-0.5, val+50, str(int(val)), fontsize=10) plt.legend(fontsize=&#39;large&#39;) ax.set_title(f&#39;COVID-19 en Chile: Número total de casos confirmados por región&#39;, fontsize=&#39;large&#39;) ax.set_xlabel(f&#39;fecha (año-mes-día)&#39;, fontsize=&#39;large&#39;) ax.set_ylabel(f&#39;total casos confirmados&#39;, fontsize=&#39;large&#39;) fig.tight_layout() plt.annotate(&#39;Source: nhttps://github.com/MinCiencia/Datos-COVID19&#39;, (0,0), (-80,-60), fontsize=&#39;large&#39;, xycoords=&#39;axes fraction&#39;, textcoords=&#39;offset points&#39;, va=&#39;top&#39;) plt.savefig(&#39;2020-04-10-COVID-19-Chile-Casos-Confirmados.png&#39;, bbox_inches=&#39;tight&#39;, format=&#39;png&#39;, dvi=700) .",
             "url": "https://alonsosilvaallende.github.io/covid-19-fastpages/2020/04/18/2020-04-19-Total-Casos-Confirmados-por-region.html",
             "relUrl": "/2020/04/18/2020-04-19-Total-Casos-Confirmados-por-region.html",
             "date": " • Apr 18, 2020"
