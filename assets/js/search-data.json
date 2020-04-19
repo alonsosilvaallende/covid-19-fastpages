@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "COVID-19 en Chile",
-            "content": "Evoluci&#243;n de casos confirmados por regi&#243;n . Evoluci&#243;n de fallecidos confirmados por regi&#243;n . Evoluci&#243;n de pacientes en UCI por regi&#243;n . Fallecidos confirmados por regi&#243;n . Tasa de fallecidos por regi&#243;n . Tasa de fallecidos = fallecidos por cada 1 millón de habitantes . death_rate.reset_index() . Region Fallecidos . 0 Antofagasta | 1.445392 | . 1 Biobio | 1.803214 | . 2 Valparaiso | 2.040639 | . 3 Total | 6.475382 | . 4 Los Lagos | 6.730683 | . 5 Maule | 7.067519 | . 6 Metropolitana | 7.138398 | . 7 Los Rios | 7.392167 | . 8 Arica y Parinacota | 7.933045 | . 9 Araucania | 22.674776 | . 10 Nuble | 23.458072 | . 11 Magallanes | 33.639452 | . Tasa de letalidad por regi&#243;n . Tasa de letalidad = fallecidos confirmados / casos confirmados (en porcentaje) .",
+            "content": "Evoluci&#243;n de casos confirmados por regi&#243;n . Evoluci&#243;n de fallecidos confirmados por regi&#243;n . Evoluci&#243;n de pacientes en UCI por regi&#243;n . Fallecidos confirmados por regi&#243;n . Tasa de fallecidos por regi&#243;n . Tasa de fallecidos = fallecidos por cada 1 millón de habitantes . Tasa de letalidad por regi&#243;n . Tasa de letalidad = fallecidos confirmados / casos confirmados (en porcentaje) .",
             "url": "https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/04/20/test.html",
             "relUrl": "/jupyter/2020/04/20/test.html",
             "date": " • Apr 20, 2020"
