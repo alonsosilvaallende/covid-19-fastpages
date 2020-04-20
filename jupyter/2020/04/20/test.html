@@ -155,6 +155,8 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#Evolución-de-casos-confirmados-por-región">Evolución de casos confirmados por región </a></li>
 <li class="toc-entry toc-h1"><a href="#Evolución-de-fallecidos-confirmados-por-región">Evolución de fallecidos confirmados por región </a></li>
 <li class="toc-entry toc-h1"><a href="#Evolución-de-pacientes-en-UCI-por-región">Evolución de pacientes en UCI por región </a></li>
+<li class="toc-entry toc-h1"><a href="#Casos-confirmados-por-región">Casos confirmados por región </a></li>
+<li class="toc-entry toc-h1"><a href="#Casos-confirmados-por-cada-100.000-habitantes-por-región">Casos confirmados por cada 100.000 habitantes por región </a></li>
 <li class="toc-entry toc-h1"><a href="#Fallecidos-confirmados-por-región">Fallecidos confirmados por región </a></li>
 <li class="toc-entry toc-h1"><a href="#Fallecidos-confirmados-por-cada-100.000-habitantes-por-región">Fallecidos confirmados por cada 100.000 habitantes por región </a></li>
 <li class="toc-entry toc-h1"><a href="#Tasa-de-letalidad-por-región">Tasa de letalidad por región </a></li>
@@ -446,6 +448,166 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Casos-confirmados-por-región">
+<a class="anchor" href="#Casos-confirmados-por-regi%C3%B3n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Casos confirmados por región<a class="anchor-link" href="#Casos-confirmados-por-regi%C3%B3n"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-8615def7c15848afaeb5fb46061d3f8f"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-8615def7c15848afaeb5fb46061d3f8f") {
+      outputDiv = document.getElementById("altair-viz-8615def7c15848afaeb5fb46061d3f8f");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Casos confirmados"}, "field": "2020-04-19", "scale": {"domain": [0, 5600]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Casos confirmados por regi\u00f3n"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "2020-04-19"}, "x": {"type": "quantitative", "axis": {"title": "Casos confirmados"}, "field": "2020-04-19", "scale": {"domain": [0, 5600]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Casos confirmados por regi\u00f3n"}], "data": {"name": "data-2ee74e4e3e6ddbe970c9eee4cf1193dc"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-2ee74e4e3e6ddbe970c9eee4cf1193dc": [{"Region": "Arica y Parinacota", "2020-04-19": 145}, {"Region": "Tarapac\u00e1", "2020-04-19": 90}, {"Region": "Antofagasta", "2020-04-19": 249}, {"Region": "Atacama", "2020-04-19": 13}, {"Region": "Coquimbo", "2020-04-19": 68}, {"Region": "Valpara\u00edso", "2020-04-19": 381}, {"Region": "Metropolitana", "2020-04-19": 5381}, {"Region": "O\u2019Higgins", "2020-04-19": 55}, {"Region": "Maule", "2020-04-19": 302}, {"Region": "\u00d1uble", "2020-04-19": 678}, {"Region": "Biob\u00edo", "2020-04-19": 616}, {"Region": "Araucan\u00eda", "2020-04-19": 972}, {"Region": "Los R\u00edos", "2020-04-19": 157}, {"Region": "Los Lagos", "2020-04-19": 421}, {"Region": "Ays\u00e9n", "2020-04-19": 7}, {"Region": "Magallanes", "2020-04-19": 553}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Casos-confirmados-por-cada-100.000-habitantes-por-región">
+<a class="anchor" href="#Casos-confirmados-por-cada-100.000-habitantes-por-regi%C3%B3n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Casos confirmados por cada 100.000 habitantes por región<a class="anchor-link" href="#Casos-confirmados-por-cada-100.000-habitantes-por-regi%C3%B3n"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-351009b9950d4c1ea1add23734444b01"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-351009b9950d4c1ea1add23734444b01") {
+      outputDiv = document.getElementById("altair-viz-351009b9950d4c1ea1add23734444b01");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Casos confirmados"}, "field": "Tasa de casos", "scale": {"domain": [0, 340]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Casos confirmados por cada 100.000 habitantes por regi\u00f3n"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "Tasa de casos", "format": ",.2f"}, "x": {"type": "quantitative", "axis": {"title": "Casos confirmados"}, "field": "Tasa de casos", "scale": {"domain": [0, 340]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Casos confirmados por cada 100.000 habitantes por regi\u00f3n"}], "data": {"name": "data-c8d8b60e3e5aaa967bd7e90fb35bf9c9"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-c8d8b60e3e5aaa967bd7e90fb35bf9c9": [{"Region": "Arica y Parinacota", "2020-04-19": 145, "Tasa de casos": 57.51457697037008}, {"Region": "Tarapac\u00e1", "2020-04-19": 90, "Tasa de casos": 23.51263020118974}, {"Region": "Antofagasta", "2020-04-19": 249, "Tasa de casos": 35.99025227865995}, {"Region": "Atacama", "2020-04-19": 13, "Tasa de casos": 4.130800199549425}, {"Region": "Coquimbo", "2020-04-19": 68, "Tasa de casos": 8.133037354562155}, {"Region": "Valpara\u00edso", "2020-04-19": 381, "Tasa de casos": 19.43708964018427}, {"Region": "Metropolitana", "2020-04-19": 5381, "Tasa de casos": 66.22710543365031}, {"Region": "O\u2019Higgins", "2020-04-19": 55, "Tasa de casos": 5.549596746120075}, {"Region": "Maule", "2020-04-19": 302, "Tasa de casos": 26.679882926553464}, {"Region": "\u00d1uble", "2020-04-19": 678, "Tasa de casos": 132.5381047051027}, {"Region": "Biob\u00edo", "2020-04-19": 616, "Tasa de casos": 37.025995133726354}, {"Region": "Araucan\u00eda", "2020-04-19": 972, "Tasa de casos": 95.8255737950575}, {"Region": "Los R\u00edos", "2020-04-19": 157, "Tasa de casos": 38.685672748777215}, {"Region": "Los Lagos", "2020-04-19": 421, "Tasa de casos": 47.22695862873553}, {"Region": "Ays\u00e9n", "2020-04-19": 7, "Tasa de casos": 6.523947547461718}, {"Region": "Magallanes", "2020-04-19": 553, "Tasa de casos": 310.0436191565468}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
