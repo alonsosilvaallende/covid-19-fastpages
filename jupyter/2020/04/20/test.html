@@ -156,7 +156,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#Evolución-de-fallecidos-confirmados-por-región">Evolución de fallecidos confirmados por región </a></li>
 <li class="toc-entry toc-h1"><a href="#Evolución-de-pacientes-en-UCI-por-región">Evolución de pacientes en UCI por región </a></li>
 <li class="toc-entry toc-h1"><a href="#Fallecidos-confirmados-por-región">Fallecidos confirmados por región </a></li>
-<li class="toc-entry toc-h1"><a href="#Tasa-de-fallecidos-por-región">Tasa de fallecidos por región </a></li>
+<li class="toc-entry toc-h1"><a href="#Fallecidos-confirmados-por-cada-100.000-habitantes-por-región">Fallecidos confirmados por cada 100.000 habitantes por región </a></li>
 <li class="toc-entry toc-h1"><a href="#Tasa-de-letalidad-por-región">Tasa de letalidad por región </a></li>
 </ul><!--
 #################################################
@@ -443,13 +443,9 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Tasa-de-fallecidos-por-región">
-<a class="anchor" href="#Tasa-de-fallecidos-por-regi%C3%B3n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tasa de fallecidos por región<a class="anchor-link" href="#Tasa-de-fallecidos-por-regi%C3%B3n"> </a>
+<h1 id="Fallecidos-confirmados-por-cada-100.000-habitantes-por-región">
+<a class="anchor" href="#Fallecidos-confirmados-por-cada-100.000-habitantes-por-regi%C3%B3n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fallecidos confirmados por cada 100.000 habitantes por región<a class="anchor-link" href="#Fallecidos-confirmados-por-cada-100.000-habitantes-por-regi%C3%B3n"> </a>
 </h1>
-<blockquote>
-<p>Tasa de fallecidos = fallecidos por cada 1 millón de habitantes</p>
-</blockquote>
-
 </div>
 </div>
 </div>
@@ -465,12 +461,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-27f502be6514476aa1d81f9472077c71"></div>
+<div id="altair-viz-946dba5662a3411b83d2585acf00d275"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-27f502be6514476aa1d81f9472077c71") {
-      outputDiv = document.getElementById("altair-viz-27f502be6514476aa1d81f9472077c71");
+    if (outputDiv.id !== "altair-viz-946dba5662a3411b83d2585acf00d275") {
+      outputDiv = document.getElementById("altair-viz-946dba5662a3411b83d2585acf00d275");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -512,7 +508,7 @@ window.onload = wrap_img;
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Tasa de fallecidos confirmados"}, "field": "Fallecidos", "scale": {"domain": [0, 36.0]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Tasa de fallecidos confirmados por regi\u00f3n"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "Fallecidos", "format": ",.1f"}, "x": {"type": "quantitative", "axis": {"title": "Tasa de fallecidos confirmados"}, "field": "Fallecidos", "scale": {"domain": [0, 36.0]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Tasa de fallecidos confirmados por regi\u00f3n"}], "data": {"name": "data-b1610e3fdf80c0f5efb4bc4033e06fa8"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-b1610e3fdf80c0f5efb4bc4033e06fa8": [{"Region": "Antofagasta", "Fallecidos": 1.4453916577775079}, {"Region": "Biobio", "Fallecidos": 1.8032140487204393}, {"Region": "Valparaiso", "Fallecidos": 2.550799165378513}, {"Region": "Los  Lagos", "Fallecidos": 6.730682939962308}, {"Region": "Total", "Fallecidos": 6.835125969315937}, {"Region": "Maule", "Fallecidos": 7.067518656040653}, {"Region": "Los  Rios", "Fallecidos": 7.39216676728227}, {"Region": "Metropolitana", "Fallecidos": 7.753777443449117}, {"Region": "Arica  y  Parinacota", "Fallecidos": 7.93304509936139}, {"Region": "Araucania", "Fallecidos": 22.674775692246115}, {"Region": "Nuble", "Fallecidos": 25.412910931656864}, {"Region": "Magallanes", "Fallecidos": 33.63945234971575}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Fallecidos confirmados por cada 100.000 habitantes"}, "field": "Fallecidos", "scale": {"domain": [0, 3.6]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Fallecidos confirmados por cada 100.000 habitantes por regi\u00f3n"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "Fallecidos", "format": ",.2f"}, "x": {"type": "quantitative", "axis": {"title": "Fallecidos confirmados por cada 100.000 habitantes"}, "field": "Fallecidos", "scale": {"domain": [0, 3.6]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Fallecidos confirmados por cada 100.000 habitantes por regi\u00f3n"}], "data": {"name": "data-2389299ee2c2bd0e31b80ca40939122b"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-2389299ee2c2bd0e31b80ca40939122b": [{"Region": "Antofagasta", "Fallecidos": 0.1445391657777508}, {"Region": "Biobio", "Fallecidos": 0.18032140487204393}, {"Region": "Valparaiso", "Fallecidos": 0.2550799165378513}, {"Region": "Los  Lagos", "Fallecidos": 0.6730682939962308}, {"Region": "Total", "Fallecidos": 0.6835125969315937}, {"Region": "Maule", "Fallecidos": 0.7067518656040652}, {"Region": "Los  Rios", "Fallecidos": 0.739216676728227}, {"Region": "Metropolitana", "Fallecidos": 0.7753777443449117}, {"Region": "Arica  y  Parinacota", "Fallecidos": 0.793304509936139}, {"Region": "Araucania", "Fallecidos": 2.2674775692246114}, {"Region": "Nuble", "Fallecidos": 2.5412910931656865}, {"Region": "Magallanes", "Fallecidos": 3.363945234971575}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
