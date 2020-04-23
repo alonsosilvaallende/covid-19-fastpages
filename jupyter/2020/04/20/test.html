@@ -1005,6 +1005,23 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">today_es_format</span> <span class="o">=</span> <span class="n">update_date</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">'</span><span class="si">%d</span><span class="s1">/%m/%Y'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
 
 <div class="output_wrapper">
 <div class="output">
@@ -1014,12 +1031,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-2dc4e8456cbd4b5b8e24d2a01fd8400b"></div>
+<div id="altair-viz-3a19ce3d451a41dc83eedd38ffe364b1"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2dc4e8456cbd4b5b8e24d2a01fd8400b") {
-      outputDiv = document.getElementById("altair-viz-2dc4e8456cbd4b5b8e24d2a01fd8400b");
+    if (outputDiv.id !== "altair-viz-3a19ce3d451a41dc83eedd38ffe364b1") {
+      outputDiv = document.getElementById("altair-viz-3a19ce3d451a41dc83eedd38ffe364b1");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -1061,7 +1078,7 @@ window.onload = wrap_img;
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Casos confirmados"}, "field": "2020-04-22", "scale": {"domain": [0, 5600]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Casos confirmados por regi\u00f3n"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "2020-04-22"}, "x": {"type": "quantitative", "axis": {"title": "Casos confirmados"}, "field": "2020-04-22", "scale": {"domain": [0, 5600]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Casos confirmados por regi\u00f3n"}], "data": {"name": "data-2631d2e6749f275f7412f9e30d0abebb"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-2631d2e6749f275f7412f9e30d0abebb": [{"Region": "Arica y Parinacota", "2020-04-22": 180}, {"Region": "Tarapac\u00e1", "2020-04-22": 114}, {"Region": "Antofagasta", "2020-04-22": 326}, {"Region": "Atacama", "2020-04-22": 13}, {"Region": "Coquimbo", "2020-04-22": 70}, {"Region": "Valpara\u00edso", "2020-04-22": 421}, {"Region": "Metropolitana", "2020-04-22": 6083}, {"Region": "O\u2019Higgins", "2020-04-22": 59}, {"Region": "Maule", "2020-04-22": 328}, {"Region": "\u00d1uble", "2020-04-22": 703}, {"Region": "Biob\u00edo", "2020-04-22": 658}, {"Region": "Araucan\u00eda", "2020-04-22": 1113}, {"Region": "Los R\u00edos", "2020-04-22": 171}, {"Region": "Los Lagos", "2020-04-22": 445}, {"Region": "Ays\u00e9n", "2020-04-22": 7}, {"Region": "Magallanes", "2020-04-22": 605}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"tooltip": {"type": "quantitative", "field": "2020-04-22"}, "x": {"type": "quantitative", "axis": {"title": "Casos confirmados"}, "field": "2020-04-22", "scale": {"domain": [0, 5600]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Casos confirmados por regi\u00f3n al 22/04/2020"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "2020-04-22"}, "tooltip": {"type": "quantitative", "field": "2020-04-22"}, "x": {"type": "quantitative", "axis": {"title": "Casos confirmados"}, "field": "2020-04-22", "scale": {"domain": [0, 5600]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Casos confirmados por regi\u00f3n al 22/04/2020"}], "data": {"name": "data-2631d2e6749f275f7412f9e30d0abebb"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-2631d2e6749f275f7412f9e30d0abebb": [{"Region": "Arica y Parinacota", "2020-04-22": 180}, {"Region": "Tarapac\u00e1", "2020-04-22": 114}, {"Region": "Antofagasta", "2020-04-22": 326}, {"Region": "Atacama", "2020-04-22": 13}, {"Region": "Coquimbo", "2020-04-22": 70}, {"Region": "Valpara\u00edso", "2020-04-22": 421}, {"Region": "Metropolitana", "2020-04-22": 6083}, {"Region": "O\u2019Higgins", "2020-04-22": 59}, {"Region": "Maule", "2020-04-22": 328}, {"Region": "\u00d1uble", "2020-04-22": 703}, {"Region": "Biob\u00edo", "2020-04-22": 658}, {"Region": "Araucan\u00eda", "2020-04-22": 1113}, {"Region": "Los R\u00edos", "2020-04-22": 171}, {"Region": "Los Lagos", "2020-04-22": 445}, {"Region": "Ays\u00e9n", "2020-04-22": 7}, {"Region": "Magallanes", "2020-04-22": 605}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -1102,12 +1119,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-9e1c9a626a8049a4b6aad0a1497426ac"></div>
+<div id="altair-viz-888a1e1ee4644cadb12c2564ed2a4c47"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9e1c9a626a8049a4b6aad0a1497426ac") {
-      outputDiv = document.getElementById("altair-viz-9e1c9a626a8049a4b6aad0a1497426ac");
+    if (outputDiv.id !== "altair-viz-888a1e1ee4644cadb12c2564ed2a4c47") {
+      outputDiv = document.getElementById("altair-viz-888a1e1ee4644cadb12c2564ed2a4c47");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -1149,7 +1166,7 @@ window.onload = wrap_img;
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Casos confirmados por cada 100.000 habitantes"}, "field": "Tasa de casos", "scale": {"domain": [0, 340]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Casos confirmados por regi\u00f3n por cada 100.000 habitantes"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "Tasa de casos", "format": ",.2f"}, "x": {"type": "quantitative", "axis": {"title": "Casos confirmados por cada 100.000 habitantes"}, "field": "Tasa de casos", "scale": {"domain": [0, 340]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Casos confirmados por regi\u00f3n por cada 100.000 habitantes"}], "data": {"name": "data-c0b51abede43c0c123fea5a53e1213bb"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-c0b51abede43c0c123fea5a53e1213bb": [{"Region": "Arica y Parinacota", "2020-04-22": 180, "Tasa de casos": 71.39740589425251}, {"Region": "Tarapac\u00e1", "2020-04-22": 114, "Tasa de casos": 29.782664921507003}, {"Region": "Antofagasta", "2020-04-22": 326, "Tasa de casos": 47.11976804354676}, {"Region": "Atacama", "2020-04-22": 13, "Tasa de casos": 4.130800199549425}, {"Region": "Coquimbo", "2020-04-22": 70, "Tasa de casos": 8.37224433557869}, {"Region": "Valpara\u00edso", "2020-04-22": 421, "Tasa de casos": 21.477728972487082}, {"Region": "Metropolitana", "2020-04-22": 6083, "Tasa de casos": 74.86702887063647}, {"Region": "O\u2019Higgins", "2020-04-22": 59, "Tasa de casos": 5.953203782201535}, {"Region": "Maule", "2020-04-22": 328, "Tasa de casos": 28.976826489766676}, {"Region": "\u00d1uble", "2020-04-22": 703, "Tasa de casos": 137.42520296119056}, {"Region": "Biob\u00edo", "2020-04-22": 658, "Tasa de casos": 39.55049480193497}, {"Region": "Araucan\u00eda", "2020-04-22": 1113, "Tasa de casos": 109.72619715421706}, {"Region": "Los R\u00edos", "2020-04-22": 171, "Tasa de casos": 42.13535057350894}, {"Region": "Los Lagos", "2020-04-22": 445, "Tasa de casos": 49.919231804720454}, {"Region": "Ays\u00e9n", "2020-04-22": 7, "Tasa de casos": 6.523947547461718}, {"Region": "Magallanes", "2020-04-22": 605, "Tasa de casos": 339.1978111929671}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Casos confirmados por cada 100.000 habitantes"}, "field": "Tasa de casos", "scale": {"domain": [0, 340]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Casos confirmados por regi\u00f3n por cada 100.000 habitantes al 22/04/2020"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "Tasa de casos", "format": ",.2f"}, "x": {"type": "quantitative", "axis": {"title": "Casos confirmados por cada 100.000 habitantes"}, "field": "Tasa de casos", "scale": {"domain": [0, 340]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Casos confirmados por regi\u00f3n por cada 100.000 habitantes al 22/04/2020"}], "data": {"name": "data-c0b51abede43c0c123fea5a53e1213bb"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-c0b51abede43c0c123fea5a53e1213bb": [{"Region": "Arica y Parinacota", "2020-04-22": 180, "Tasa de casos": 71.39740589425251}, {"Region": "Tarapac\u00e1", "2020-04-22": 114, "Tasa de casos": 29.782664921507003}, {"Region": "Antofagasta", "2020-04-22": 326, "Tasa de casos": 47.11976804354676}, {"Region": "Atacama", "2020-04-22": 13, "Tasa de casos": 4.130800199549425}, {"Region": "Coquimbo", "2020-04-22": 70, "Tasa de casos": 8.37224433557869}, {"Region": "Valpara\u00edso", "2020-04-22": 421, "Tasa de casos": 21.477728972487082}, {"Region": "Metropolitana", "2020-04-22": 6083, "Tasa de casos": 74.86702887063647}, {"Region": "O\u2019Higgins", "2020-04-22": 59, "Tasa de casos": 5.953203782201535}, {"Region": "Maule", "2020-04-22": 328, "Tasa de casos": 28.976826489766676}, {"Region": "\u00d1uble", "2020-04-22": 703, "Tasa de casos": 137.42520296119056}, {"Region": "Biob\u00edo", "2020-04-22": 658, "Tasa de casos": 39.55049480193497}, {"Region": "Araucan\u00eda", "2020-04-22": 1113, "Tasa de casos": 109.72619715421706}, {"Region": "Los R\u00edos", "2020-04-22": 171, "Tasa de casos": 42.13535057350894}, {"Region": "Los Lagos", "2020-04-22": 445, "Tasa de casos": 49.919231804720454}, {"Region": "Ays\u00e9n", "2020-04-22": 7, "Tasa de casos": 6.523947547461718}, {"Region": "Magallanes", "2020-04-22": 605, "Tasa de casos": 339.1978111929671}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -1190,12 +1207,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-919563c75e274f48a46bfdf1a10c430c"></div>
+<div id="altair-viz-a77422461b3f45f29a69ac669479e3a0"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-919563c75e274f48a46bfdf1a10c430c") {
-      outputDiv = document.getElementById("altair-viz-919563c75e274f48a46bfdf1a10c430c");
+    if (outputDiv.id !== "altair-viz-a77422461b3f45f29a69ac669479e3a0") {
+      outputDiv = document.getElementById("altair-viz-a77422461b3f45f29a69ac669479e3a0");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -1237,7 +1254,7 @@ window.onload = wrap_img;
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Fallecidos confirmados"}, "field": "Fallecidos", "scale": {"domain": [0, 70]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Fallecidos confirmados por regi\u00f3n"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "Fallecidos"}, "x": {"type": "quantitative", "axis": {"title": "Fallecidos confirmados"}, "field": "Fallecidos", "scale": {"domain": [0, 70]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Fallecidos confirmados por regi\u00f3n"}], "data": {"name": "data-a3aad338d9740e274bc9e3b42268c8de"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-a3aad338d9740e274bc9e3b42268c8de": [{"Region": "Arica  y  Parinacota", "Casos  nuevos": 10, "Casos  totales": 180, "%  Casos  totales**": "1.59  %", "Fallecidos": 2}, {"Region": "Antofagasta", "Casos  nuevos": 35, "Casos  totales": 326, "%  Casos  totales**": "2.89  %", "Fallecidos": 2}, {"Region": "Valparaiso", "Casos  nuevos": 18, "Casos  totales": 421, "%  Casos  totales**": "3.73  %", "Fallecidos": 7}, {"Region": "Metropolitana", "Casos  nuevos": 295, "Casos  totales": 6083, "%  Casos  totales**": "53.85  %", "Fallecidos": 78}, {"Region": "O'Higgins", "Casos  nuevos": 2, "Casos  totales": 59, "%  Casos  totales**": "0.52  %", "Fallecidos": 1}, {"Region": "Maule", "Casos  nuevos": 12, "Casos  totales": 328, "%  Casos  totales**": "2.90  %", "Fallecidos": 10}, {"Region": "Nuble", "Casos  nuevos": 9, "Casos  totales": 703, "%  Casos  totales**": "6.22  %", "Fallecidos": 13}, {"Region": "Biobio", "Casos  nuevos": 22, "Casos  totales": 658, "%  Casos  totales**": "5.83  %", "Fallecidos": 5}, {"Region": "Araucania", "Casos  nuevos": 21, "Casos  totales": 1113, "%  Casos  totales**": "9.85  %", "Fallecidos": 26}, {"Region": "Los  Rios", "Casos  nuevos": 4, "Casos  totales": 171, "%  Casos  totales**": "1.51  %", "Fallecidos": 3}, {"Region": "Los  Lagos", "Casos  nuevos": 13, "Casos  totales": 445, "%  Casos  totales**": "3.94  %", "Fallecidos": 6}, {"Region": "Magallanes", "Casos  nuevos": 12, "Casos  totales": 605, "%  Casos  totales**": "5.36  %", "Fallecidos": 7}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Fallecidos confirmados"}, "field": "Fallecidos", "scale": {"domain": [0, 70]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Fallecidos confirmados por regi\u00f3n al 22/04/2020"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "Fallecidos"}, "x": {"type": "quantitative", "axis": {"title": "Fallecidos confirmados"}, "field": "Fallecidos", "scale": {"domain": [0, 70]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Fallecidos confirmados por regi\u00f3n al 22/04/2020"}], "data": {"name": "data-a3aad338d9740e274bc9e3b42268c8de"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-a3aad338d9740e274bc9e3b42268c8de": [{"Region": "Arica  y  Parinacota", "Casos  nuevos": 10, "Casos  totales": 180, "%  Casos  totales**": "1.59  %", "Fallecidos": 2}, {"Region": "Antofagasta", "Casos  nuevos": 35, "Casos  totales": 326, "%  Casos  totales**": "2.89  %", "Fallecidos": 2}, {"Region": "Valparaiso", "Casos  nuevos": 18, "Casos  totales": 421, "%  Casos  totales**": "3.73  %", "Fallecidos": 7}, {"Region": "Metropolitana", "Casos  nuevos": 295, "Casos  totales": 6083, "%  Casos  totales**": "53.85  %", "Fallecidos": 78}, {"Region": "O'Higgins", "Casos  nuevos": 2, "Casos  totales": 59, "%  Casos  totales**": "0.52  %", "Fallecidos": 1}, {"Region": "Maule", "Casos  nuevos": 12, "Casos  totales": 328, "%  Casos  totales**": "2.90  %", "Fallecidos": 10}, {"Region": "Nuble", "Casos  nuevos": 9, "Casos  totales": 703, "%  Casos  totales**": "6.22  %", "Fallecidos": 13}, {"Region": "Biobio", "Casos  nuevos": 22, "Casos  totales": 658, "%  Casos  totales**": "5.83  %", "Fallecidos": 5}, {"Region": "Araucania", "Casos  nuevos": 21, "Casos  totales": 1113, "%  Casos  totales**": "9.85  %", "Fallecidos": 26}, {"Region": "Los  Rios", "Casos  nuevos": 4, "Casos  totales": 171, "%  Casos  totales**": "1.51  %", "Fallecidos": 3}, {"Region": "Los  Lagos", "Casos  nuevos": 13, "Casos  totales": 445, "%  Casos  totales**": "3.94  %", "Fallecidos": 6}, {"Region": "Magallanes", "Casos  nuevos": 12, "Casos  totales": 605, "%  Casos  totales**": "5.36  %", "Fallecidos": 7}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -1278,12 +1295,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-9cf62f22fb0745e48c4c97b2abf00c2d"></div>
+<div id="altair-viz-cf6fa44929594665a2bf6dc9a228e1a6"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9cf62f22fb0745e48c4c97b2abf00c2d") {
-      outputDiv = document.getElementById("altair-viz-9cf62f22fb0745e48c4c97b2abf00c2d");
+    if (outputDiv.id !== "altair-viz-cf6fa44929594665a2bf6dc9a228e1a6") {
+      outputDiv = document.getElementById("altair-viz-cf6fa44929594665a2bf6dc9a228e1a6");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -1325,7 +1342,7 @@ window.onload = wrap_img;
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Fallecidos confirmados por cada 100.000 habitantes"}, "field": "Fallecidos", "scale": {"domain": [0, 3.6]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Fallecidos confirmados por regi\u00f3n por cada 100.000 habitantes"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "Fallecidos", "format": ",.2f"}, "x": {"type": "quantitative", "axis": {"title": "Fallecidos confirmados por cada 100.000 habitantes"}, "field": "Fallecidos", "scale": {"domain": [0, 3.6]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Fallecidos confirmados por regi\u00f3n por cada 100.000 habitantes"}], "data": {"name": "data-05e6ca5bb9912be82273377a2d394ee7"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-05e6ca5bb9912be82273377a2d394ee7": [{"Region": "O'Higgins", "Fallecidos": 0.10090175902036501}, {"Region": "Antofagasta", "Fallecidos": 0.2890783315555016}, {"Region": "Biobio", "Fallecidos": 0.30053567478673987}, {"Region": "Valparaiso", "Fallecidos": 0.3571118831529918}, {"Region": "Los  Lagos", "Fallecidos": 0.6730682939962308}, {"Region": "Los  Rios", "Fallecidos": 0.739216676728227}, {"Region": "Arica  y  Parinacota", "Fallecidos": 0.793304509936139}, {"Region": "Total", "Fallecidos": 0.8222707933011654}, {"Region": "Maule", "Fallecidos": 0.8834398320050816}, {"Region": "Metropolitana", "Fallecidos": 0.9599914929984621}, {"Region": "Nuble", "Fallecidos": 2.5412910931656865}, {"Region": "Araucania", "Fallecidos": 2.5632355130365174}, {"Region": "Magallanes", "Fallecidos": 3.9246027741335037}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Fallecidos confirmados por cada 100.000 habitantes"}, "field": "Fallecidos", "scale": {"domain": [0, 3.6]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Fallecidos confirmados por regi\u00f3n por cada 100.000 habitantes al 22/04/2020"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "Fallecidos", "format": ",.2f"}, "x": {"type": "quantitative", "axis": {"title": "Fallecidos confirmados por cada 100.000 habitantes"}, "field": "Fallecidos", "scale": {"domain": [0, 3.6]}}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Fallecidos confirmados por regi\u00f3n por cada 100.000 habitantes al 22/04/2020"}], "data": {"name": "data-05e6ca5bb9912be82273377a2d394ee7"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-05e6ca5bb9912be82273377a2d394ee7": [{"Region": "O'Higgins", "Fallecidos": 0.10090175902036501}, {"Region": "Antofagasta", "Fallecidos": 0.2890783315555016}, {"Region": "Biobio", "Fallecidos": 0.30053567478673987}, {"Region": "Valparaiso", "Fallecidos": 0.3571118831529918}, {"Region": "Los  Lagos", "Fallecidos": 0.6730682939962308}, {"Region": "Los  Rios", "Fallecidos": 0.739216676728227}, {"Region": "Arica  y  Parinacota", "Fallecidos": 0.793304509936139}, {"Region": "Total", "Fallecidos": 0.8222707933011654}, {"Region": "Maule", "Fallecidos": 0.8834398320050816}, {"Region": "Metropolitana", "Fallecidos": 0.9599914929984621}, {"Region": "Nuble", "Fallecidos": 2.5412910931656865}, {"Region": "Araucania", "Fallecidos": 2.5632355130365174}, {"Region": "Magallanes", "Fallecidos": 3.9246027741335037}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -1370,12 +1387,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-df9b1877d423407eb0f952a1606cb6bb"></div>
+<div id="altair-viz-29ecbb9acd754a10b09bb16448dd0518"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-df9b1877d423407eb0f952a1606cb6bb") {
-      outputDiv = document.getElementById("altair-viz-df9b1877d423407eb0f952a1606cb6bb");
+    if (outputDiv.id !== "altair-viz-29ecbb9acd754a10b09bb16448dd0518") {
+      outputDiv = document.getElementById("altair-viz-29ecbb9acd754a10b09bb16448dd0518");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -1417,7 +1434,7 @@ window.onload = wrap_img;
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Tasa de letalidad"}, "field": "Tasa de letalidad"}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Tasa de letalidad por regi\u00f3n"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "Tasa de letalidad", "format": ",.1f"}, "x": {"type": "quantitative", "axis": {"title": "Tasa de letalidad"}, "field": "Tasa de letalidad"}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Tasa de letalidad por regi\u00f3n"}], "data": {"name": "data-0658b599c2a8ac0c9cdb00deae62be45"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-0658b599c2a8ac0c9cdb00deae62be45": [{"Region": "Antofagasta", "Tasa de letalidad": 0.6134969325153374}, {"Region": "Biobio", "Tasa de letalidad": 0.7598784194528876}, {"Region": "Arica  y  Parinacota", "Tasa de letalidad": 1.1111111111111112}, {"Region": "Magallanes", "Tasa de letalidad": 1.1570247933884297}, {"Region": "Metropolitana", "Tasa de letalidad": 1.2822620417557127}, {"Region": "Los  Lagos", "Tasa de letalidad": 1.348314606741573}, {"Region": "Total", "Tasa de letalidad": 1.41643059490085}, {"Region": "Valparaiso", "Tasa de letalidad": 1.66270783847981}, {"Region": "O'Higgins", "Tasa de letalidad": 1.694915254237288}, {"Region": "Los  Rios", "Tasa de letalidad": 1.7543859649122806}, {"Region": "Nuble", "Tasa de letalidad": 1.849217638691323}, {"Region": "Araucania", "Tasa de letalidad": 2.336028751123091}, {"Region": "Maule", "Tasa de letalidad": 3.048780487804878}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "bar", "encoding": {"x": {"type": "quantitative", "axis": {"title": "Tasa de letalidad"}, "field": "Tasa de letalidad"}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Tasa de letalidad por regi\u00f3n al 22/04/2020"}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"text": {"type": "quantitative", "field": "Tasa de letalidad", "format": ",.1f"}, "x": {"type": "quantitative", "axis": {"title": "Tasa de letalidad"}, "field": "Tasa de letalidad"}, "y": {"type": "nominal", "field": "Region", "sort": "-x"}}, "title": "COVID-19 en Chile: Tasa de letalidad por regi\u00f3n al 22/04/2020"}], "data": {"name": "data-0658b599c2a8ac0c9cdb00deae62be45"}, "height": 300, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-0658b599c2a8ac0c9cdb00deae62be45": [{"Region": "Antofagasta", "Tasa de letalidad": 0.6134969325153374}, {"Region": "Biobio", "Tasa de letalidad": 0.7598784194528876}, {"Region": "Arica  y  Parinacota", "Tasa de letalidad": 1.1111111111111112}, {"Region": "Magallanes", "Tasa de letalidad": 1.1570247933884297}, {"Region": "Metropolitana", "Tasa de letalidad": 1.2822620417557127}, {"Region": "Los  Lagos", "Tasa de letalidad": 1.348314606741573}, {"Region": "Total", "Tasa de letalidad": 1.41643059490085}, {"Region": "Valparaiso", "Tasa de letalidad": 1.66270783847981}, {"Region": "O'Higgins", "Tasa de letalidad": 1.694915254237288}, {"Region": "Los  Rios", "Tasa de letalidad": 1.7543859649122806}, {"Region": "Nuble", "Tasa de letalidad": 1.849217638691323}, {"Region": "Araucania", "Tasa de letalidad": 2.336028751123091}, {"Region": "Maule", "Tasa de letalidad": 3.048780487804878}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -1848,12 +1865,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-8077fec6e72a41b98f0a1722def9c792"></div>
+<div id="altair-viz-8396247575274b54834393119b74a3b4"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-8077fec6e72a41b98f0a1722def9c792") {
-      outputDiv = document.getElementById("altair-viz-8077fec6e72a41b98f0a1722def9c792");
+    if (outputDiv.id !== "altair-viz-8396247575274b54834393119b74a3b4") {
+      outputDiv = document.getElementById("altair-viz-8396247575274b54834393119b74a3b4");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
