@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "",
+            "title": "Covid-19 status in Chile",
             "content": "Updated on April 26, 2020. . Confirmed cases: 13,331 (+3,243 since 7 days ago) . Confirmed deaths: 189 (+56 since 7 days ago) . Statistics by region: Confirmed cases and confirmed deaths Region Confirmed cases Confirmed cases per 100,000 people Confirmed deaths Confirmed deaths per 100.000 people . Arica y Parinacota | 252 | 64 | 3 | 1.2 | . Tarapacá | 156 | 119.9 | 1 | 0.3 | . Antofagasta | 443 | 100 | 4 | 0.6 | . Atacama | 29 | 9.2 | 0 | 0 | . Coquimbo | 73 | 6.5 | 0 | 0 | . Valparaíso | 460 | 42.3 | 9 | 0.5 | . Metropolitana | 7496 | 8.7 | 91 | 1.1 | . O’Higgins | 92 | 53.1 | 1 | 0.1 | . Maule | 354 | 43.9 | 11 | 1 | . Ñuble | 731 | 374.5 | 14 | 2.7 | . Biobío | 703 | 31.3 | 6 | 0.4 | . Araucanía | 1216 | 92.3 | 29 | 2.9 | . Los Ríos | 178 | 9.3 | 3 | 0.7 | . Los Lagos | 473 | 40.8 | 8 | 0.9 | . Aysén | 7 | 23.5 | 0 | 0 | . Magallanes | 668 | 142.9 | 9 | 5 | . Evolution of total confirmed cases by region . Evolution of total confirmed deaths by region . Data source: Science Ministry. . Daily confirmed cases . Chile . Arica y Parinacota . Tarapac&#225; . Antofagasta . Atacama . Coquimbo . Valpara&#237;so . Metropolitana . O&#39;Higgins . Maule . &#209;uble . Biob&#237;o . Araucan&#237;a . Los R&#237;os . Los Lagos . Ays&#233;n . Magallanes . Daily confirmed deaths . Chile . Arica y Parinacota . Tarapac&#225; . Antofagasta . Atacama . Coquimbo . Valpara&#237;so . Metropolitana . O&#8217;Higgins . Maule . &#209;uble . Biob&#237;o . Araucan&#237;a . Los R&#237;os . Los Lagos . Ays&#233;n . Magallanes .",
-            "url": "https://alonsosilvaallende.github.io/covid-19-fastpages/2020/04/27/2020-04-27-Covid-19-Overview-Chile.html",
-            "relUrl": "/2020/04/27/2020-04-27-Covid-19-Overview-Chile.html",
+            "url": "https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/04/27/Covid-19-Overview-Chile.html",
+            "relUrl": "/jupyter/2020/04/27/Covid-19-Overview-Chile.html",
             "date": " • Apr 27, 2020"
         }
         

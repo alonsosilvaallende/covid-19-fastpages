@@ -1,4 +1,202 @@
-<!--
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Covid-19 status in Chile | COVID-19 en Chile</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Covid-19 status in Chile" />
+<meta name="author" content="Alonso Silva Allende" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Covid-19 overview in Chile" />
+<meta property="og:description" content="Covid-19 overview in Chile" />
+<link rel="canonical" href="https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/04/27/Covid-19-Overview-Chile.html" />
+<meta property="og:url" content="https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/04/27/Covid-19-Overview-Chile.html" />
+<meta property="og:site_name" content="COVID-19 en Chile" />
+<meta property="og:image" content="https://alonsosilvaallende.github.io/covid-19-fastpages/images/Chile-total-confirmed-cases.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-27T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-04-27T00:00:00-05:00","dateModified":"2020-04-27T00:00:00-05:00","author":{"@type":"Person","name":"Alonso Silva Allende"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/04/27/Covid-19-Overview-Chile.html"},"description":"Covid-19 overview in Chile","image":"https://alonsosilvaallende.github.io/covid-19-fastpages/images/Chile-total-confirmed-cases.png","@type":"BlogPosting","url":"https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/04/27/Covid-19-Overview-Chile.html","headline":"Covid-19 status in Chile","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/covid-19-fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://alonsosilvaallende.github.io/covid-19-fastpages/feed.xml" title="COVID-19 en Chile" /><link rel="shortcut icon" type="image/x-icon" href="/covid-19-fastpages/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Covid-19 status in Chile | COVID-19 en Chile</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Covid-19 status in Chile" />
+<meta name="author" content="Alonso Silva Allende" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Covid-19 overview in Chile" />
+<meta property="og:description" content="Covid-19 overview in Chile" />
+<link rel="canonical" href="https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/04/27/Covid-19-Overview-Chile.html" />
+<meta property="og:url" content="https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/04/27/Covid-19-Overview-Chile.html" />
+<meta property="og:site_name" content="COVID-19 en Chile" />
+<meta property="og:image" content="https://alonsosilvaallende.github.io/covid-19-fastpages/images/Chile-total-confirmed-cases.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-04-27T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-04-27T00:00:00-05:00","dateModified":"2020-04-27T00:00:00-05:00","author":{"@type":"Person","name":"Alonso Silva Allende"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/04/27/Covid-19-Overview-Chile.html"},"description":"Covid-19 overview in Chile","image":"https://alonsosilvaallende.github.io/covid-19-fastpages/images/Chile-total-confirmed-cases.png","@type":"BlogPosting","url":"https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/04/27/Covid-19-Overview-Chile.html","headline":"Covid-19 status in Chile","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://alonsosilvaallende.github.io/covid-19-fastpages/feed.xml" title="COVID-19 en Chile" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/covid-19-fastpages/">COVID-19 en Chile</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/covid-19-fastpages/about/">About Me</a><a class="page-link" href="/covid-19-fastpages/search/">Search</a><a class="page-link" href="/covid-19-fastpages/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Covid-19 status in Chile</h1><p class="page-description">Covid-19 overview in Chile</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-27T00:00:00-05:00" itemprop="datePublished">
+        Apr 27, 2020
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Alonso Silva Allende</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/covid-19-fastpages/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/alonsosilvaallende/covid-19-fastpages/tree/master/_notebooks/2020-04-27-Covid-19-Overview-Chile.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/covid-19-fastpages/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/alonsosilvaallende/covid-19-fastpages/master?filepath=_notebooks%2F2020-04-27-Covid-19-Overview-Chile.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/covid-19-fastpages/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/alonsosilvaallende/covid-19-fastpages/blob/master/_notebooks/2020-04-27-Covid-19-Overview-Chile.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/covid-19-fastpages/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Evolution-of-total-confirmed-cases-by-region">Evolution of total confirmed cases by region </a></li>
+<li class="toc-entry toc-h1"><a href="#Evolution-of-total-confirmed-deaths-by-region">Evolution of total confirmed deaths by region </a></li>
+<li class="toc-entry toc-h1"><a href="#Daily-confirmed-cases">Daily confirmed cases </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Chile">Chile </a></li>
+<li class="toc-entry toc-h2"><a href="#Arica-y-Parinacota">Arica y Parinacota </a></li>
+<li class="toc-entry toc-h2"><a href="#Tarapacá">Tarapacá </a></li>
+<li class="toc-entry toc-h2"><a href="#Antofagasta">Antofagasta </a></li>
+<li class="toc-entry toc-h2"><a href="#Atacama">Atacama </a></li>
+<li class="toc-entry toc-h2"><a href="#Coquimbo">Coquimbo </a></li>
+<li class="toc-entry toc-h2"><a href="#Valparaíso">Valparaíso </a></li>
+<li class="toc-entry toc-h2"><a href="#Metropolitana">Metropolitana </a></li>
+<li class="toc-entry toc-h2"><a href="#O'Higgins">O&#39;Higgins </a></li>
+<li class="toc-entry toc-h2"><a href="#Maule">Maule </a></li>
+<li class="toc-entry toc-h2"><a href="#Ñuble">Ñuble </a></li>
+<li class="toc-entry toc-h2"><a href="#Biobío">Biobío </a></li>
+<li class="toc-entry toc-h2"><a href="#Araucanía">Araucanía </a></li>
+<li class="toc-entry toc-h2"><a href="#Los-Ríos">Los Ríos </a></li>
+<li class="toc-entry toc-h2"><a href="#Los-Lagos">Los Lagos </a></li>
+<li class="toc-entry toc-h2"><a href="#Aysén">Aysén </a></li>
+<li class="toc-entry toc-h2"><a href="#Magallanes">Magallanes </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Daily-confirmed-deaths">Daily confirmed deaths </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Chile">Chile </a></li>
+<li class="toc-entry toc-h2"><a href="#Arica-y-Parinacota">Arica y Parinacota </a></li>
+<li class="toc-entry toc-h2"><a href="#Tarapacá">Tarapacá </a></li>
+<li class="toc-entry toc-h2"><a href="#Antofagasta">Antofagasta </a></li>
+<li class="toc-entry toc-h2"><a href="#Atacama">Atacama </a></li>
+<li class="toc-entry toc-h2"><a href="#Coquimbo">Coquimbo </a></li>
+<li class="toc-entry toc-h2"><a href="#Valparaíso">Valparaíso </a></li>
+<li class="toc-entry toc-h2"><a href="#Metropolitana">Metropolitana </a></li>
+<li class="toc-entry toc-h2"><a href="#O’Higgins">O’Higgins </a></li>
+<li class="toc-entry toc-h2"><a href="#Maule">Maule </a></li>
+<li class="toc-entry toc-h2"><a href="#Ñuble">Ñuble </a></li>
+<li class="toc-entry toc-h2"><a href="#Biobío">Biobío </a></li>
+<li class="toc-entry toc-h2"><a href="#Araucanía">Araucanía </a></li>
+<li class="toc-entry toc-h2"><a href="#Los-Ríos">Los Ríos </a></li>
+<li class="toc-entry toc-h2"><a href="#Los-Lagos">Los Lagos </a></li>
+<li class="toc-entry toc-h2"><a href="#Aysén">Aysén </a></li>
+<li class="toc-entry toc-h2"><a href="#Magallanes">Magallanes </a></li>
+</ul>
+</li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -46,7 +244,8 @@
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<p style="color:#3361ff;"><span style="font-weight:bold;">Confirmed cases:</span> 13,331 (+3,243 since 7 days ago)</p><p style="color:#FF3F3F;"><span style="font-weight:bold;">Confirmed deaths:</span> 189 (+56 since 7 days ago)</p>
+<p style="color:#3361ff;"><span style="font-weight:bold;">Confirmed cases:</span> 13,331 (+3,243 since 7 days ago)</p>
+<p style="color:#FF3F3F;"><span style="font-weight:bold;">Confirmed deaths:</span> 189 (+56 since 7 days ago)</p>
 </div>
 
 </div>
@@ -357,7 +556,12 @@
             text-align:  right;
             background-color:  #67000d;
             color:  #f1f1f1;
-        }</style><table id="T_a4a67a74_8888_11ea_be06_60f81dc8f27a"><caption>Statistics by region: Confirmed cases and confirmed deaths</caption><thead>    <tr>        <th class="col_heading level0 col0">Region</th>        <th class="col_heading level0 col1">Confirmed cases</th>        <th class="col_heading level0 col2">Confirmed cases per 100,000 people</th>        <th class="col_heading level0 col3">Confirmed deaths</th>        <th class="col_heading level0 col4">Confirmed deaths per 100.000 people</th>    </tr></thead><tbody>
+        }</style>
+<table id="T_a4a67a74_8888_11ea_be06_60f81dc8f27a">
+<caption>Statistics by region: Confirmed cases and confirmed deaths</caption>
+<thead>    <tr>        <th class="col_heading level0 col0">Region</th>        <th class="col_heading level0 col1">Confirmed cases</th>        <th class="col_heading level0 col2">Confirmed cases per 100,000 people</th>        <th class="col_heading level0 col3">Confirmed deaths</th>        <th class="col_heading level0 col4">Confirmed deaths per 100.000 people</th>    </tr>
+</thead>
+<tbody>
                 <tr>
                                 <td id="T_a4a67a74_8888_11ea_be06_60f81dc8f27arow0_col0" class="data row0 col0">Arica y Parinacota</td>
                         <td id="T_a4a67a74_8888_11ea_be06_60f81dc8f27arow0_col1" class="data row0 col1">252</td>
@@ -470,7 +674,8 @@
                         <td id="T_a4a67a74_8888_11ea_be06_60f81dc8f27arow15_col3" class="data row15 col3">9</td>
                         <td id="T_a4a67a74_8888_11ea_be06_60f81dc8f27arow15_col4" class="data row15 col4">5</td>
             </tr>
-    </tbody></table>
+    </tbody>
+</table>
 </div>
 
 </div>
@@ -481,9 +686,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Evolution-of-total-confirmed-cases-by-region">Evolution of total confirmed cases by region<a class="anchor-link" href="#Evolution-of-total-confirmed-cases-by-region"> </a></h1>
+<h1 id="Evolution-of-total-confirmed-cases-by-region">
+<a class="anchor" href="#Evolution-of-total-confirmed-cases-by-region" aria-hidden="true"><span class="octicon octicon-link"></span></a>Evolution of total confirmed cases by region<a class="anchor-link" href="#Evolution-of-total-confirmed-cases-by-region"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -558,9 +766,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Evolution-of-total-confirmed-deaths-by-region">Evolution of total confirmed deaths by region<a class="anchor-link" href="#Evolution-of-total-confirmed-deaths-by-region"> </a></h1>
+<h1 id="Evolution-of-total-confirmed-deaths-by-region">
+<a class="anchor" href="#Evolution-of-total-confirmed-deaths-by-region" aria-hidden="true"><span class="octicon octicon-link"></span></a>Evolution of total confirmed deaths by region<a class="anchor-link" href="#Evolution-of-total-confirmed-deaths-by-region"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -635,22 +846,29 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Data source: <a href="https://github.com/MinCiencia/Datos-COVID19">Science Ministry</a>.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Daily-confirmed-cases">Daily confirmed cases<a class="anchor-link" href="#Daily-confirmed-cases"> </a></h1>
+<h1 id="Daily-confirmed-cases">
+<a class="anchor" href="#Daily-confirmed-cases" aria-hidden="true"><span class="octicon octicon-link"></span></a>Daily confirmed cases<a class="anchor-link" href="#Daily-confirmed-cases"> </a>
+</h1>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Chile">Chile<a class="anchor-link" href="#Chile"> </a></h2>
+<h2 id="Chile">
+<a class="anchor" href="#Chile" aria-hidden="true"><span class="octicon octicon-link"></span></a>Chile<a class="anchor-link" href="#Chile"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -725,9 +943,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Arica-y-Parinacota">Arica y Parinacota<a class="anchor-link" href="#Arica-y-Parinacota"> </a></h2>
+<h2 id="Arica-y-Parinacota">
+<a class="anchor" href="#Arica-y-Parinacota" aria-hidden="true"><span class="octicon octicon-link"></span></a>Arica y Parinacota<a class="anchor-link" href="#Arica-y-Parinacota"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -802,9 +1023,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Tarapac&#225;">Tarapac&#225;<a class="anchor-link" href="#Tarapac&#225;"> </a></h2>
+<h2 id="Tarapacá">
+<a class="anchor" href="#Tarapac%C3%A1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tarapacá<a class="anchor-link" href="#Tarapac%C3%A1"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -879,9 +1103,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Antofagasta">Antofagasta<a class="anchor-link" href="#Antofagasta"> </a></h2>
+<h2 id="Antofagasta">
+<a class="anchor" href="#Antofagasta" aria-hidden="true"><span class="octicon octicon-link"></span></a>Antofagasta<a class="anchor-link" href="#Antofagasta"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -956,9 +1183,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Atacama">Atacama<a class="anchor-link" href="#Atacama"> </a></h2>
+<h2 id="Atacama">
+<a class="anchor" href="#Atacama" aria-hidden="true"><span class="octicon octicon-link"></span></a>Atacama<a class="anchor-link" href="#Atacama"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1033,9 +1263,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Coquimbo">Coquimbo<a class="anchor-link" href="#Coquimbo"> </a></h2>
+<h2 id="Coquimbo">
+<a class="anchor" href="#Coquimbo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Coquimbo<a class="anchor-link" href="#Coquimbo"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1110,9 +1343,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Valpara&#237;so">Valpara&#237;so<a class="anchor-link" href="#Valpara&#237;so"> </a></h2>
+<h2 id="Valparaíso">
+<a class="anchor" href="#Valpara%C3%ADso" aria-hidden="true"><span class="octicon octicon-link"></span></a>Valparaíso<a class="anchor-link" href="#Valpara%C3%ADso"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1187,9 +1423,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Metropolitana">Metropolitana<a class="anchor-link" href="#Metropolitana"> </a></h2>
+<h2 id="Metropolitana">
+<a class="anchor" href="#Metropolitana" aria-hidden="true"><span class="octicon octicon-link"></span></a>Metropolitana<a class="anchor-link" href="#Metropolitana"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1264,9 +1503,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="O'Higgins">O'Higgins<a class="anchor-link" href="#O'Higgins"> </a></h2>
+<h2 id="O'Higgins">
+<a class="anchor" href="#O'Higgins" aria-hidden="true"><span class="octicon octicon-link"></span></a>O'Higgins<a class="anchor-link" href="#O'Higgins"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1341,9 +1583,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Maule">Maule<a class="anchor-link" href="#Maule"> </a></h2>
+<h2 id="Maule">
+<a class="anchor" href="#Maule" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maule<a class="anchor-link" href="#Maule"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1418,9 +1663,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#209;uble">&#209;uble<a class="anchor-link" href="#&#209;uble"> </a></h2>
+<h2 id="Ñuble">
+<a class="anchor" href="#%C3%91uble" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ñuble<a class="anchor-link" href="#%C3%91uble"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1495,9 +1743,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Biob&#237;o">Biob&#237;o<a class="anchor-link" href="#Biob&#237;o"> </a></h2>
+<h2 id="Biobío">
+<a class="anchor" href="#Biob%C3%ADo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Biobío<a class="anchor-link" href="#Biob%C3%ADo"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1572,9 +1823,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Araucan&#237;a">Araucan&#237;a<a class="anchor-link" href="#Araucan&#237;a"> </a></h2>
+<h2 id="Araucanía">
+<a class="anchor" href="#Araucan%C3%ADa" aria-hidden="true"><span class="octicon octicon-link"></span></a>Araucanía<a class="anchor-link" href="#Araucan%C3%ADa"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1649,9 +1903,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Los-R&#237;os">Los R&#237;os<a class="anchor-link" href="#Los-R&#237;os"> </a></h2>
+<h2 id="Los-Ríos">
+<a class="anchor" href="#Los-R%C3%ADos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Los Ríos<a class="anchor-link" href="#Los-R%C3%ADos"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1726,9 +1983,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Los-Lagos">Los Lagos<a class="anchor-link" href="#Los-Lagos"> </a></h2>
+<h2 id="Los-Lagos">
+<a class="anchor" href="#Los-Lagos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Los Lagos<a class="anchor-link" href="#Los-Lagos"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1803,9 +2063,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ays&#233;n">Ays&#233;n<a class="anchor-link" href="#Ays&#233;n"> </a></h2>
+<h2 id="Aysén">
+<a class="anchor" href="#Ays%C3%A9n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Aysén<a class="anchor-link" href="#Ays%C3%A9n"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1880,9 +2143,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Magallanes">Magallanes<a class="anchor-link" href="#Magallanes"> </a></h2>
+<h2 id="Magallanes">
+<a class="anchor" href="#Magallanes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Magallanes<a class="anchor-link" href="#Magallanes"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -1957,15 +2223,21 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Daily-confirmed-deaths">Daily confirmed deaths<a class="anchor-link" href="#Daily-confirmed-deaths"> </a></h1>
+<h1 id="Daily-confirmed-deaths">
+<a class="anchor" href="#Daily-confirmed-deaths" aria-hidden="true"><span class="octicon octicon-link"></span></a>Daily confirmed deaths<a class="anchor-link" href="#Daily-confirmed-deaths"> </a>
+</h1>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Chile">Chile<a class="anchor-link" href="#Chile"> </a></h2>
+<h2 id="Chile">
+<a class="anchor" href="#Chile" aria-hidden="true"><span class="octicon octicon-link"></span></a>Chile<a class="anchor-link" href="#Chile"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2040,9 +2312,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Arica-y-Parinacota">Arica y Parinacota<a class="anchor-link" href="#Arica-y-Parinacota"> </a></h2>
+<h2 id="Arica-y-Parinacota">
+<a class="anchor" href="#Arica-y-Parinacota" aria-hidden="true"><span class="octicon octicon-link"></span></a>Arica y Parinacota<a class="anchor-link" href="#Arica-y-Parinacota"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2117,9 +2392,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Tarapac&#225;">Tarapac&#225;<a class="anchor-link" href="#Tarapac&#225;"> </a></h2>
+<h2 id="Tarapacá">
+<a class="anchor" href="#Tarapac%C3%A1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tarapacá<a class="anchor-link" href="#Tarapac%C3%A1"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2194,9 +2472,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Antofagasta">Antofagasta<a class="anchor-link" href="#Antofagasta"> </a></h2>
+<h2 id="Antofagasta">
+<a class="anchor" href="#Antofagasta" aria-hidden="true"><span class="octicon octicon-link"></span></a>Antofagasta<a class="anchor-link" href="#Antofagasta"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2271,9 +2552,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Atacama">Atacama<a class="anchor-link" href="#Atacama"> </a></h2>
+<h2 id="Atacama">
+<a class="anchor" href="#Atacama" aria-hidden="true"><span class="octicon octicon-link"></span></a>Atacama<a class="anchor-link" href="#Atacama"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2348,9 +2632,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Coquimbo">Coquimbo<a class="anchor-link" href="#Coquimbo"> </a></h2>
+<h2 id="Coquimbo">
+<a class="anchor" href="#Coquimbo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Coquimbo<a class="anchor-link" href="#Coquimbo"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2425,9 +2712,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Valpara&#237;so">Valpara&#237;so<a class="anchor-link" href="#Valpara&#237;so"> </a></h2>
+<h2 id="Valparaíso">
+<a class="anchor" href="#Valpara%C3%ADso" aria-hidden="true"><span class="octicon octicon-link"></span></a>Valparaíso<a class="anchor-link" href="#Valpara%C3%ADso"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2502,9 +2792,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Metropolitana">Metropolitana<a class="anchor-link" href="#Metropolitana"> </a></h2>
+<h2 id="Metropolitana">
+<a class="anchor" href="#Metropolitana" aria-hidden="true"><span class="octicon octicon-link"></span></a>Metropolitana<a class="anchor-link" href="#Metropolitana"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2579,9 +2872,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="O&#8217;Higgins">O&#8217;Higgins<a class="anchor-link" href="#O&#8217;Higgins"> </a></h2>
+<h2 id="O’Higgins">
+<a class="anchor" href="#O%E2%80%99Higgins" aria-hidden="true"><span class="octicon octicon-link"></span></a>O’Higgins<a class="anchor-link" href="#O%E2%80%99Higgins"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2656,9 +2952,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Maule">Maule<a class="anchor-link" href="#Maule"> </a></h2>
+<h2 id="Maule">
+<a class="anchor" href="#Maule" aria-hidden="true"><span class="octicon octicon-link"></span></a>Maule<a class="anchor-link" href="#Maule"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2733,9 +3032,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="&#209;uble">&#209;uble<a class="anchor-link" href="#&#209;uble"> </a></h2>
+<h2 id="Ñuble">
+<a class="anchor" href="#%C3%91uble" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ñuble<a class="anchor-link" href="#%C3%91uble"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2810,9 +3112,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Biob&#237;o">Biob&#237;o<a class="anchor-link" href="#Biob&#237;o"> </a></h2>
+<h2 id="Biobío">
+<a class="anchor" href="#Biob%C3%ADo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Biobío<a class="anchor-link" href="#Biob%C3%ADo"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2887,9 +3192,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Araucan&#237;a">Araucan&#237;a<a class="anchor-link" href="#Araucan&#237;a"> </a></h2>
+<h2 id="Araucanía">
+<a class="anchor" href="#Araucan%C3%ADa" aria-hidden="true"><span class="octicon octicon-link"></span></a>Araucanía<a class="anchor-link" href="#Araucan%C3%ADa"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -2964,9 +3272,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Los-R&#237;os">Los R&#237;os<a class="anchor-link" href="#Los-R&#237;os"> </a></h2>
+<h2 id="Los-Ríos">
+<a class="anchor" href="#Los-R%C3%ADos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Los Ríos<a class="anchor-link" href="#Los-R%C3%ADos"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -3041,9 +3352,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Los-Lagos">Los Lagos<a class="anchor-link" href="#Los-Lagos"> </a></h2>
+<h2 id="Los-Lagos">
+<a class="anchor" href="#Los-Lagos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Los Lagos<a class="anchor-link" href="#Los-Lagos"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -3118,9 +3432,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Ays&#233;n">Ays&#233;n<a class="anchor-link" href="#Ays&#233;n"> </a></h2>
+<h2 id="Aysén">
+<a class="anchor" href="#Ays%C3%A9n" aria-hidden="true"><span class="octicon octicon-link"></span></a>Aysén<a class="anchor-link" href="#Ays%C3%A9n"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -3195,9 +3512,12 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Magallanes">Magallanes<a class="anchor-link" href="#Magallanes"> </a></h2>
+<h2 id="Magallanes">
+<a class="anchor" href="#Magallanes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Magallanes<a class="anchor-link" href="#Magallanes"> </a>
+</h2>
 </div>
 </div>
 </div>
@@ -3274,3 +3594,45 @@
 
 </div>
 
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="alonsosilvaallende/covid-19-fastpages"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/covid-19-fastpages/jupyter/2020/04/27/Covid-19-Overview-Chile.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/covid-19-fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/covid-19-fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/covid-19-fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/alonsosilvaallende" title="alonsosilvaallende"><svg class="svg-icon grey"><use xlink:href="/covid-19-fastpages/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/alonsosilva" title="alonsosilva"><svg class="svg-icon grey"><use xlink:href="/covid-19-fastpages/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
