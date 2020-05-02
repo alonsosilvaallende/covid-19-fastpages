@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>DRAFT: COVID-19 en Chile: Estadísticas demográficos | COVID-19 en Chile</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="DRAFT: COVID-19 en Chile: Estadísticas demográficos" />
+<meta name="author" content="Alonso Silva Allende" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Total de casos confirmados, fallecidos confirmados, pacientes en UCI por sexo y rango de edad." />
+<meta property="og:description" content="Total de casos confirmados, fallecidos confirmados, pacientes en UCI por sexo y rango de edad." />
+<link rel="canonical" href="https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/05/03/Demographic-Statistics.html" />
+<meta property="og:url" content="https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/05/03/Demographic-Statistics.html" />
+<meta property="og:site_name" content="COVID-19 en Chile" />
+<meta property="og:image" content="https://alonsosilvaallende.github.io/covid-19-fastpages/images/diagram.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-03T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-05-03T00:00:00-05:00","dateModified":"2020-05-03T00:00:00-05:00","author":{"@type":"Person","name":"Alonso Silva Allende"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/05/03/Demographic-Statistics.html"},"description":"Total de casos confirmados, fallecidos confirmados, pacientes en UCI por sexo y rango de edad.","image":"https://alonsosilvaallende.github.io/covid-19-fastpages/images/diagram.png","@type":"BlogPosting","url":"https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/05/03/Demographic-Statistics.html","headline":"DRAFT: COVID-19 en Chile: Estadísticas demográficos","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/covid-19-fastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://alonsosilvaallende.github.io/covid-19-fastpages/feed.xml" title="COVID-19 en Chile" /><link rel="shortcut icon" type="image/x-icon" href="/covid-19-fastpages/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>DRAFT: COVID-19 en Chile: Estadísticas demográficos | COVID-19 en Chile</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="DRAFT: COVID-19 en Chile: Estadísticas demográficos" />
+<meta name="author" content="Alonso Silva Allende" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Total de casos confirmados, fallecidos confirmados, pacientes en UCI por sexo y rango de edad." />
+<meta property="og:description" content="Total de casos confirmados, fallecidos confirmados, pacientes en UCI por sexo y rango de edad." />
+<link rel="canonical" href="https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/05/03/Demographic-Statistics.html" />
+<meta property="og:url" content="https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/05/03/Demographic-Statistics.html" />
+<meta property="og:site_name" content="COVID-19 en Chile" />
+<meta property="og:image" content="https://alonsosilvaallende.github.io/covid-19-fastpages/images/diagram.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-05-03T00:00:00-05:00" />
+<script type="application/ld+json">
+{"datePublished":"2020-05-03T00:00:00-05:00","dateModified":"2020-05-03T00:00:00-05:00","author":{"@type":"Person","name":"Alonso Silva Allende"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/05/03/Demographic-Statistics.html"},"description":"Total de casos confirmados, fallecidos confirmados, pacientes en UCI por sexo y rango de edad.","image":"https://alonsosilvaallende.github.io/covid-19-fastpages/images/diagram.png","@type":"BlogPosting","url":"https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/05/03/Demographic-Statistics.html","headline":"DRAFT: COVID-19 en Chile: Estadísticas demográficos","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://alonsosilvaallende.github.io/covid-19-fastpages/feed.xml" title="COVID-19 en Chile" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/covid-19-fastpages/">COVID-19 en Chile</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/covid-19-fastpages/about/">About Me</a><a class="page-link" href="/covid-19-fastpages/search/">Search</a><a class="page-link" href="/covid-19-fastpages/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">DRAFT: COVID-19 en Chile: Estadísticas demográficos</h1><p class="page-description">Total de casos confirmados, fallecidos confirmados, pacientes en UCI por sexo y rango de edad.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-05-03T00:00:00-05:00" itemprop="datePublished">
+        May 3, 2020
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Alonso Silva Allende</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/covid-19-fastpages/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/alonsosilvaallende/covid-19-fastpages/tree/master/_notebooks/2020-05-03-Demographic-Statistics.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/covid-19-fastpages/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/alonsosilvaallende/covid-19-fastpages/master?filepath=_notebooks%2F2020-05-03-Demographic-Statistics.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/covid-19-fastpages/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/alonsosilvaallende/covid-19-fastpages/blob/master/_notebooks/2020-05-03-Demographic-Statistics.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/covid-19-fastpages/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Fallecidos-confirmados-por-grupo-de-edad">Fallecidos confirmados por grupo de edad </a></li>
+<li class="toc-entry toc-h1"><a href="#Casos-confirmados-por-grupo-de-edad">Casos confirmados por grupo de edad </a></li>
+<li class="toc-entry toc-h1"><a href="#Pacientes-UCI-por-rango-de-edad">Pacientes UCI por rango de edad </a></li>
+<li class="toc-entry toc-h1"><a href="#Evolución-de-fallecidos-confirmados-por-rango-de-edad">Evolución de fallecidos confirmados por rango de edad </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-05-03-Demographic-Statistics.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Fallecidos-confirmados-por-grupo-de-edad">
+<a class="anchor" href="#Fallecidos-confirmados-por-grupo-de-edad" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fallecidos confirmados por grupo de edad<a class="anchor-link" href="#Fallecidos-confirmados-por-grupo-de-edad"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-94a0ca25de5f413a9a2249cf5056094e"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-94a0ca25de5f413a9a2249cf5056094e") {
+      outputDiv = document.getElementById("altair-viz-94a0ca25de5f413a9a2249cf5056094e");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "opacity": 0.8, "size": 30}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Fallecidos confirmados"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Fallecidos confirmados"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}, "height": {"step": 40}, "title": "Covid-19 en Chile: Fallecidos confirmados al 01/05/2020", "width": 600}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "text": {"type": "nominal", "field": "Texto"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Fallecidos confirmados"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Fallecidos confirmados"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}}], "data": {"name": "data-4c93d3fc3a0e44b27d0b37131dfdad82"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-4c93d3fc3a0e44b27d0b37131dfdad82": [{"index": 0, "Grupo de edad": "<=39", "Fallecidos confirmados": 6, "Porcentaje": 2.6, "Texto": "6 (2.6%)"}, {"index": 1, "Grupo de edad": "40-49", "Fallecidos confirmados": 10, "Porcentaje": 4.3, "Texto": "10 (4.3%)"}, {"index": 2, "Grupo de edad": "50-59", "Fallecidos confirmados": 18, "Porcentaje": 7.7, "Texto": "18 (7.7%)"}, {"index": 3, "Grupo de edad": "60-69", "Fallecidos confirmados": 41, "Porcentaje": 17.5, "Texto": "41 (17.5%)"}, {"index": 4, "Grupo de edad": "70-79", "Fallecidos confirmados": 68, "Porcentaje": 29.1, "Texto": "68 (29.1%)"}, {"index": 5, "Grupo de edad": "80-89", "Fallecidos confirmados": 70, "Porcentaje": 29.9, "Texto": "70 (29.9%)"}, {"index": 6, "Grupo de edad": ">=90", "Fallecidos confirmados": 21, "Porcentaje": 9.0, "Texto": "21 (9.0%)"}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Casos-confirmados-por-grupo-de-edad">
+<a class="anchor" href="#Casos-confirmados-por-grupo-de-edad" aria-hidden="true"><span class="octicon octicon-link"></span></a>Casos confirmados por grupo de edad<a class="anchor-link" href="#Casos-confirmados-por-grupo-de-edad"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-50813ef252fd42aa9d4e3cfd2cfd352f"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-50813ef252fd42aa9d4e3cfd2cfd352f") {
+      outputDiv = document.getElementById("altair-viz-50813ef252fd42aa9d4e3cfd2cfd352f");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "opacity": 0.8, "size": 30}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Casos confirmados"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Casos confirmados"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", ">=80"]}}, "height": {"step": 40}, "title": "Covid-19 en Chile: Casos confirmados al 01/05/2020", "width": 600}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "text": {"type": "nominal", "field": "Texto"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Casos confirmados"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Casos confirmados"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", ">=80"]}}}], "data": {"name": "data-ff11abcfbcad270f2f783fc567530a74"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-ff11abcfbcad270f2f783fc567530a74": [{"index": 0, "Grupo de edad": "<=39", "Casos confirmados": 7358, "Porcentaje": 51.2, "Texto": "7358 (51.2%)"}, {"index": 1, "Grupo de edad": "40-49", "Casos confirmados": 2597, "Porcentaje": 18.1, "Texto": "2597 (18.1%)"}, {"index": 2, "Grupo de edad": "50-59", "Casos confirmados": 2118, "Porcentaje": 14.7, "Texto": "2118 (14.7%)"}, {"index": 3, "Grupo de edad": "60-69", "Casos confirmados": 1206, "Porcentaje": 8.4, "Texto": "1206 (8.4%)"}, {"index": 4, "Grupo de edad": "70-79", "Casos confirmados": 664, "Porcentaje": 4.6, "Texto": "664 (4.6%)"}, {"index": 5, "Grupo de edad": ">=80", "Casos confirmados": 419, "Porcentaje": 2.9, "Texto": "419 (2.9%)"}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Pacientes-UCI-por-rango-de-edad">
+<a class="anchor" href="#Pacientes-UCI-por-rango-de-edad" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pacientes UCI por rango de edad<a class="anchor-link" href="#Pacientes-UCI-por-rango-de-edad"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-5d099dbe6e9c42b0a61c4e1871961077"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-5d099dbe6e9c42b0a61c4e1871961077") {
+      outputDiv = document.getElementById("altair-viz-5d099dbe6e9c42b0a61c4e1871961077");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "opacity": 0.8, "size": 30}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Pacientes UCI"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Pacientes UCI"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}, "height": {"step": 40}, "title": "Pacientes UCI presentes el 01/05/2020", "width": 600}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "text": {"type": "nominal", "field": "Texto"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Pacientes UCI"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Pacientes UCI"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}}], "data": {"name": "data-7e43d7a5006c8620566727ad5f49f31b"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-7e43d7a5006c8620566727ad5f49f31b": [{"index": 0, "Grupo de edad": "<=39", "Pacientes UCI": 50, "Porcentaje": 11.7, "Texto": "50 (11.7%)"}, {"index": 1, "Grupo de edad": "40-49", "Pacientes UCI": 44, "Porcentaje": 10.3, "Texto": "44 (10.3%)"}, {"index": 2, "Grupo de edad": "50-59", "Pacientes UCI": 108, "Porcentaje": 25.2, "Texto": "108 (25.2%)"}, {"index": 3, "Grupo de edad": "60-69", "Pacientes UCI": 115, "Porcentaje": 26.9, "Texto": "115 (26.9%)"}, {"index": 4, "Grupo de edad": ">=70", "Pacientes UCI": 111, "Porcentaje": 25.9, "Texto": "111 (25.9%)"}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Evolución-de-fallecidos-confirmados-por-rango-de-edad">
+<a class="anchor" href="#Evoluci%C3%B3n-de-fallecidos-confirmados-por-rango-de-edad" aria-hidden="true"><span class="octicon octicon-link"></span></a>Evolución de fallecidos confirmados por rango de edad<a class="anchor-link" href="#Evoluci%C3%B3n-de-fallecidos-confirmados-por-rango-de-edad"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-45a41c1ffa2345e1ab20bd15c4b59999"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-45a41c1ffa2345e1ab20bd15c4b59999") {
+      outputDiv = document.getElementById("altair-viz-45a41c1ffa2345e1ab20bd15c4b59999");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "hconcat": [{"mark": "bar", "encoding": {"color": {"condition": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "tableau20"}, "selection": {"or": [" ", "selector001"]}}, "value": "lightgray"}, "order": {"type": "quantitative", "field": "index", "sort": "ascending"}, "tooltip": [{"type": "nominal", "field": "fecha (a\u00f1o-mes-d\u00eda)"}, {"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "fallecidos confirmados"}], "x": {"type": "nominal", "field": "fecha (a\u00f1o-mes-d\u00eda)"}, "y": {"type": "quantitative", "field": "fallecidos confirmados"}}, "selection": {" ": {"type": "single", "fields": ["Grupo de edad"], "bind": {"input": "select", "options": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}, "selector001": {"type": "multi", "fields": ["Grupo de edad"], "on": "mouseover"}}, "title": "COVID-19 en Chile: Evoluci\u00f3n de fallecidos confirmados por rango de edad", "transform": [{"filter": {"selection": " "}}], "width": 600}, {"mark": "point", "encoding": {"color": {"condition": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "tableau20"}, "selection": {"or": [" ", "selector001"]}}, "value": "lightgray"}, "order": {"type": "quantitative", "field": "index", "sort": "descending"}, "y": {"type": "nominal", "axis": {"orient": "right"}, "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}, "selection": {" ": {"type": "single", "fields": ["Grupo de edad"], "bind": {"input": "select", "options": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}, "selector001": {"type": "multi", "fields": ["Grupo de edad"], "on": "mouseover"}}}], "data": {"name": "data-9cd55f0cf633bdf63878ebb1647d5bd7"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-9cd55f0cf633bdf63878ebb1647d5bd7": [{"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-09", "fallecidos confirmados": 2}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-09", "fallecidos confirmados": 1}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-09", "fallecidos confirmados": 1}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-09", "fallecidos confirmados": 9}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-09", "fallecidos confirmados": 21}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-09", "fallecidos confirmados": 19}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-09", "fallecidos confirmados": 4}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-10", "fallecidos confirmados": 2}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-10", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-10", "fallecidos confirmados": 2}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-10", "fallecidos confirmados": 10}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-10", "fallecidos confirmados": 22}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-10", "fallecidos confirmados": 21}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-10", "fallecidos confirmados": 6}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-11", "fallecidos confirmados": 3}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-11", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-11", "fallecidos confirmados": 2}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-11", "fallecidos confirmados": 12}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-11", "fallecidos confirmados": 24}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-11", "fallecidos confirmados": 24}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-11", "fallecidos confirmados": 6}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-12", "fallecidos confirmados": 3}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-12", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-12", "fallecidos confirmados": 3}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-12", "fallecidos confirmados": 12}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-12", "fallecidos confirmados": 28}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-12", "fallecidos confirmados": 25}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-12", "fallecidos confirmados": 7}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-13", "fallecidos confirmados": 3}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-13", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-13", "fallecidos confirmados": 3}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-13", "fallecidos confirmados": 12}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-13", "fallecidos confirmados": 29}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-13", "fallecidos confirmados": 26}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-13", "fallecidos confirmados": 7}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-14", "fallecidos confirmados": 3}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-14", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-14", "fallecidos confirmados": 5}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-14", "fallecidos confirmados": 12}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-14", "fallecidos confirmados": 30}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-14", "fallecidos confirmados": 32}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-14", "fallecidos confirmados": 8}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-15", "fallecidos confirmados": 3}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-15", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-15", "fallecidos confirmados": 5}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-15", "fallecidos confirmados": 12}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-15", "fallecidos confirmados": 31}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-15", "fallecidos confirmados": 33}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-15", "fallecidos confirmados": 8}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-16", "fallecidos confirmados": 3}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-16", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-16", "fallecidos confirmados": 6}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-16", "fallecidos confirmados": 14}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-16", "fallecidos confirmados": 32}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-16", "fallecidos confirmados": 38}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-16", "fallecidos confirmados": 10}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-17", "fallecidos confirmados": 4}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-17", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-17", "fallecidos confirmados": 8}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-17", "fallecidos confirmados": 16}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-17", "fallecidos confirmados": 36}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-17", "fallecidos confirmados": 40}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-17", "fallecidos confirmados": 10}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-18", "fallecidos confirmados": 4}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-18", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-18", "fallecidos confirmados": 8}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-18", "fallecidos confirmados": 17}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-18", "fallecidos confirmados": 39}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-18", "fallecidos confirmados": 44}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-18", "fallecidos confirmados": 12}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-19", "fallecidos confirmados": 4}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-19", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-19", "fallecidos confirmados": 9}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-19", "fallecidos confirmados": 18}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-19", "fallecidos confirmados": 41}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-19", "fallecidos confirmados": 46}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-19", "fallecidos confirmados": 13}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-20", "fallecidos confirmados": 4}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-20", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-20", "fallecidos confirmados": 11}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-20", "fallecidos confirmados": 19}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-20", "fallecidos confirmados": 42}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-20", "fallecidos confirmados": 47}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-20", "fallecidos confirmados": 14}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-21", "fallecidos confirmados": 5}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-21", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-21", "fallecidos confirmados": 13}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-21", "fallecidos confirmados": 20}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-21", "fallecidos confirmados": 43}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-21", "fallecidos confirmados": 50}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-21", "fallecidos confirmados": 14}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-22", "fallecidos confirmados": 5}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-22", "fallecidos confirmados": 2}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-22", "fallecidos confirmados": 14}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-22", "fallecidos confirmados": 26}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-22", "fallecidos confirmados": 47}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-22", "fallecidos confirmados": 51}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-22", "fallecidos confirmados": 15}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-23", "fallecidos confirmados": 5}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-23", "fallecidos confirmados": 3}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-23", "fallecidos confirmados": 14}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-23", "fallecidos confirmados": 28}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-23", "fallecidos confirmados": 48}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-23", "fallecidos confirmados": 54}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-23", "fallecidos confirmados": 16}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-24", "fallecidos confirmados": 5}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-24", "fallecidos confirmados": 4}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-24", "fallecidos confirmados": 14}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-24", "fallecidos confirmados": 30}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-24", "fallecidos confirmados": 49}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-24", "fallecidos confirmados": 56}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-24", "fallecidos confirmados": 16}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-25", "fallecidos confirmados": 6}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-25", "fallecidos confirmados": 6}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-25", "fallecidos confirmados": 15}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-25", "fallecidos confirmados": 31}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-25", "fallecidos confirmados": 50}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-25", "fallecidos confirmados": 57}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-25", "fallecidos confirmados": 16}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-26", "fallecidos confirmados": 6}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-26", "fallecidos confirmados": 7}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-26", "fallecidos confirmados": 15}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-26", "fallecidos confirmados": 33}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-26", "fallecidos confirmados": 52}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-26", "fallecidos confirmados": 59}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-26", "fallecidos confirmados": 17}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-27", "fallecidos confirmados": 6}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-27", "fallecidos confirmados": 7}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-27", "fallecidos confirmados": 16}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-27", "fallecidos confirmados": 35}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-27", "fallecidos confirmados": 57}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-27", "fallecidos confirmados": 60}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-27", "fallecidos confirmados": 17}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-28", "fallecidos confirmados": 6}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-28", "fallecidos confirmados": 8}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-28", "fallecidos confirmados": 16}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-28", "fallecidos confirmados": 35}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-28", "fallecidos confirmados": 60}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-28", "fallecidos confirmados": 62}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-28", "fallecidos confirmados": 20}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-29", "fallecidos confirmados": 6}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-29", "fallecidos confirmados": 9}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-29", "fallecidos confirmados": 17}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-29", "fallecidos confirmados": 38}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-29", "fallecidos confirmados": 60}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-29", "fallecidos confirmados": 65}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-29", "fallecidos confirmados": 21}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-30", "fallecidos confirmados": 6}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-30", "fallecidos confirmados": 10}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-30", "fallecidos confirmados": 17}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-30", "fallecidos confirmados": 40}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-30", "fallecidos confirmados": 65}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-30", "fallecidos confirmados": 68}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-04-30", "fallecidos confirmados": 21}, {"index": 0, "Grupo de edad": "<=39", "fecha (a\u00f1o-mes-d\u00eda)": "2020-05-01", "fallecidos confirmados": 6}, {"index": 1, "Grupo de edad": "40-49", "fecha (a\u00f1o-mes-d\u00eda)": "2020-05-01", "fallecidos confirmados": 10}, {"index": 2, "Grupo de edad": "50-59", "fecha (a\u00f1o-mes-d\u00eda)": "2020-05-01", "fallecidos confirmados": 18}, {"index": 3, "Grupo de edad": "60-69", "fecha (a\u00f1o-mes-d\u00eda)": "2020-05-01", "fallecidos confirmados": 41}, {"index": 4, "Grupo de edad": "70-79", "fecha (a\u00f1o-mes-d\u00eda)": "2020-05-01", "fallecidos confirmados": 68}, {"index": 5, "Grupo de edad": "80-89", "fecha (a\u00f1o-mes-d\u00eda)": "2020-05-01", "fallecidos confirmados": 70}, {"index": 6, "Grupo de edad": ">=90", "fecha (a\u00f1o-mes-d\u00eda)": "2020-05-01", "fallecidos confirmados": 21}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="alonsosilvaallende/covid-19-fastpages"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/covid-19-fastpages/jupyter/2020/05/03/Demographic-Statistics.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/covid-19-fastpages/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/covid-19-fastpages/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/covid-19-fastpages/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/alonsosilvaallende" title="alonsosilvaallende"><svg class="svg-icon grey"><use xlink:href="/covid-19-fastpages/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/alonsosilva" title="alonsosilva"><svg class="svg-icon grey"><use xlink:href="/covid-19-fastpages/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
