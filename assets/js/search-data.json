@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "DRAFT: COVID-19 en Chile: Estadísticas demográficas",
-            "content": "Casos confirmados por grupo de edad . Fallecidos confirmados por grupo de edad . Letalidad por grupo de edad . data[&quot;Fallecidos confirmados&quot;] = a . Poblaci&#243;n por grupo de edad . Pacientes UCI por rango de edad .",
+            "content": "Casos confirmados por grupo de edad . Fallecidos confirmados por grupo de edad . Letalidad por grupo de edad . 100*deaths[&quot;Fallecidos confirmados&quot;].sum()/cases[&quot;Casos confirmados&quot;].sum() . 1.074982527373781 . Poblaci&#243;n por grupo de edad . Pacientes UCI por rango de edad .",
             "url": "https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/05/03/Demographic-Statistics.html",
             "relUrl": "/jupyter/2020/05/03/Demographic-Statistics.html",
             "date": " • May 3, 2020"
