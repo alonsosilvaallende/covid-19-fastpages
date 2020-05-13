@@ -154,6 +154,7 @@ window.onload = wrap_img;
     <ul class="section-nav">
 <li class="toc-entry toc-h1"><a href="#Casos-confirmados-por-grupo-de-edad">Casos confirmados por grupo de edad </a></li>
 <li class="toc-entry toc-h1"><a href="#Fallecidos-confirmados-por-grupo-de-edad">Fallecidos confirmados por grupo de edad </a></li>
+<li class="toc-entry toc-h1"><a href="#Letalidad-por-grupo-de-edad">Letalidad por grupo de edad </a></li>
 <li class="toc-entry toc-h1"><a href="#Población-por-grupo-de-edad">Población por grupo de edad </a></li>
 <li class="toc-entry toc-h1"><a href="#Pacientes-UCI-por-rango-de-edad">Pacientes UCI por rango de edad </a></li>
 </ul><!--
@@ -193,12 +194,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-77f4e9cc7cd74c4cbc7a89cf043452a7"></div>
+<div id="altair-viz-8ed0f424261d4a3fb46deab25061ee13"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-77f4e9cc7cd74c4cbc7a89cf043452a7") {
-      outputDiv = document.getElementById("altair-viz-77f4e9cc7cd74c4cbc7a89cf043452a7");
+    if (outputDiv.id !== "altair-viz-8ed0f424261d4a3fb46deab25061ee13") {
+      outputDiv = document.getElementById("altair-viz-8ed0f424261d4a3fb46deab25061ee13");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -240,7 +241,7 @@ window.onload = wrap_img;
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "opacity": 0.8, "size": 30}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Casos confirmados"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Casos confirmados"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", ">=80"]}}, "height": {"step": 40}, "title": "Covid-19 en Chile: Casos confirmados al 01/05/2020", "width": 600}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "text": {"type": "nominal", "field": "Texto"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Casos confirmados"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Casos confirmados"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", ">=80"]}}}], "data": {"name": "data-fc3691d3ebdf1a35cf013ed3bb98b3df"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-fc3691d3ebdf1a35cf013ed3bb98b3df": [{"index": 0, "Grupo de edad": "<=39", "Casos confirmados": 8841, "Porcentaje": 52.0, "Texto": "8841 (52.0%)"}, {"index": 1, "Grupo de edad": "40-49", "Casos confirmados": 3038, "Porcentaje": 17.9, "Texto": "3038 (17.9%)"}, {"index": 2, "Grupo de edad": "50-59", "Casos confirmados": 2507, "Porcentaje": 14.7, "Texto": "2507 (14.7%)"}, {"index": 3, "Grupo de edad": "60-69", "Casos confirmados": 1387, "Porcentaje": 8.2, "Texto": "1387 (8.2%)"}, {"index": 4, "Grupo de edad": "70-79", "Casos confirmados": 746, "Porcentaje": 4.4, "Texto": "746 (4.4%)"}, {"index": 5, "Grupo de edad": ">=80", "Casos confirmados": 489, "Porcentaje": 2.9, "Texto": "489 (2.9%)"}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "opacity": 0.8, "size": 30}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Casos confirmados"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Casos confirmados"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", ">=80"]}}, "height": {"step": 40}, "title": "Covid-19 en Chile: Casos confirmados por grupo de edad al 11/05/2020", "width": 600}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "text": {"type": "nominal", "field": "Texto"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Casos confirmados"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Casos confirmados"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", ">=80"]}}}], "data": {"name": "data-ce3b6a8ebbb702743da75ce2414c1f6a"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-ce3b6a8ebbb702743da75ce2414c1f6a": [{"index": 0, "Grupo de edad": "<=39", "Casos confirmados": 16047, "Porcentaje": 53.4, "Texto": "16047 (53.4%)"}, {"index": 1, "Grupo de edad": "40-49", "Casos confirmados": 5219, "Porcentaje": 17.4, "Texto": "5219 (17.4%)"}, {"index": 2, "Grupo de edad": "50-59", "Casos confirmados": 4314, "Porcentaje": 14.4, "Texto": "4314 (14.4%)"}, {"index": 3, "Grupo de edad": "60-69", "Casos confirmados": 2470, "Porcentaje": 8.2, "Texto": "2470 (8.2%)"}, {"index": 4, "Grupo de edad": "70-79", "Casos confirmados": 1208, "Porcentaje": 4.0, "Texto": "1208 (4.0%)"}, {"index": 5, "Grupo de edad": ">=80", "Casos confirmados": 789, "Porcentaje": 2.6, "Texto": "789 (2.6%)"}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -273,12 +274,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-c59802dae6f64883be23a54407c048db"></div>
+<div id="altair-viz-0be047714a874666b51aee671f2440c2"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c59802dae6f64883be23a54407c048db") {
-      outputDiv = document.getElementById("altair-viz-c59802dae6f64883be23a54407c048db");
+    if (outputDiv.id !== "altair-viz-0be047714a874666b51aee671f2440c2") {
+      outputDiv = document.getElementById("altair-viz-0be047714a874666b51aee671f2440c2");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -320,7 +321,104 @@ window.onload = wrap_img;
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "opacity": 0.8, "size": 30}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Fallecidos confirmados"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Fallecidos confirmados"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}, "height": {"step": 40}, "title": "Covid-19 en Chile: Fallecidos confirmados al 01/05/2020", "width": 600}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "text": {"type": "nominal", "field": "Texto"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Fallecidos confirmados"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Fallecidos confirmados"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}}], "data": {"name": "data-4c93d3fc3a0e44b27d0b37131dfdad82"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-4c93d3fc3a0e44b27d0b37131dfdad82": [{"index": 0, "Grupo de edad": "<=39", "Fallecidos confirmados": 6, "Porcentaje": 2.6, "Texto": "6 (2.6%)"}, {"index": 1, "Grupo de edad": "40-49", "Fallecidos confirmados": 10, "Porcentaje": 4.3, "Texto": "10 (4.3%)"}, {"index": 2, "Grupo de edad": "50-59", "Fallecidos confirmados": 18, "Porcentaje": 7.7, "Texto": "18 (7.7%)"}, {"index": 3, "Grupo de edad": "60-69", "Fallecidos confirmados": 41, "Porcentaje": 17.5, "Texto": "41 (17.5%)"}, {"index": 4, "Grupo de edad": "70-79", "Fallecidos confirmados": 68, "Porcentaje": 29.1, "Texto": "68 (29.1%)"}, {"index": 5, "Grupo de edad": "80-89", "Fallecidos confirmados": 70, "Porcentaje": 29.9, "Texto": "70 (29.9%)"}, {"index": 6, "Grupo de edad": ">=90", "Fallecidos confirmados": 21, "Porcentaje": 9.0, "Texto": "21 (9.0%)"}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "opacity": 0.8, "size": 30}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Fallecidos confirmados"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Fallecidos confirmados"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}, "height": {"step": 40}, "title": "Covid-19 en Chile: Fallecidos confirmados por grupo de edad al 11/05/2020", "width": 600}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "text": {"type": "nominal", "field": "Texto"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Fallecidos confirmados"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Fallecidos confirmados"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}}], "data": {"name": "data-543021992d2b00c01ed84fd56dd8d2ab"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-543021992d2b00c01ed84fd56dd8d2ab": [{"index": 0, "Grupo de edad": "<=39", "Fallecidos confirmados": 7, "Porcentaje": 2.2, "Texto": "7 (2.2%)"}, {"index": 1, "Grupo de edad": "40-49", "Fallecidos confirmados": 16, "Porcentaje": 5.0, "Texto": "16 (5.0%)"}, {"index": 2, "Grupo de edad": "50-59", "Fallecidos confirmados": 23, "Porcentaje": 7.1, "Texto": "23 (7.1%)"}, {"index": 3, "Grupo de edad": "60-69", "Fallecidos confirmados": 56, "Porcentaje": 17.3, "Texto": "56 (17.3%)"}, {"index": 4, "Grupo de edad": "70-79", "Fallecidos confirmados": 89, "Porcentaje": 27.6, "Texto": "89 (27.6%)"}, {"index": 5, "Grupo de edad": "80-89", "Fallecidos confirmados": 96, "Porcentaje": 29.7, "Texto": "96 (29.7%)"}, {"index": 6, "Grupo de edad": ">=90", "Fallecidos confirmados": 36, "Porcentaje": 11.1, "Texto": "36 (11.1%)"}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Letalidad-por-grupo-de-edad">
+<a class="anchor" href="#Letalidad-por-grupo-de-edad" aria-hidden="true"><span class="octicon octicon-link"></span></a>Letalidad por grupo de edad<a class="anchor-link" href="#Letalidad-por-grupo-de-edad"> </a>
+</h1>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span><span class="p">[</span><span class="s2">"Fallecidos confirmados"</span><span class="p">]</span> <span class="o">=</span> <span class="n">a</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-4a060be2e4b44e56a75b12bffa3cba77"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-4a060be2e4b44e56a75b12bffa3cba77") {
+      outputDiv = document.getElementById("altair-viz-4a060be2e4b44e56a75b12bffa3cba77");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "opacity": 0.8, "size": 30}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Letalidad"}], "x": {"type": "quantitative", "field": "Letalidad"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}, "height": {"step": 40}, "title": "Covid-19 en Chile: Letalidad por grupo de edad al 11/05/2020", "width": 600}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "text": {"type": "nominal", "field": "Texto"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Letalidad"}], "x": {"type": "quantitative", "field": "Letalidad"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}}], "data": {"name": "data-56faf6e4ad0e15dc899b9b86007ed465"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-56faf6e4ad0e15dc899b9b86007ed465": [{"index": 0, "Grupo de edad": "<=39", "Casos confirmados": 16047, "Fallecidos confirmados": 7, "Letalidad": 0.043621860783947156, "Texto": "0.04"}, {"index": 1, "Grupo de edad": "40-49", "Casos confirmados": 5219, "Fallecidos confirmados": 16, "Letalidad": 0.30657214025675417, "Texto": "0.31"}, {"index": 2, "Grupo de edad": "50-59", "Casos confirmados": 4314, "Fallecidos confirmados": 23, "Letalidad": 0.5331478905887808, "Texto": "0.53"}, {"index": 3, "Grupo de edad": "60-69", "Casos confirmados": 2470, "Fallecidos confirmados": 56, "Letalidad": 2.2672064777327936, "Texto": "2.27"}, {"index": 4, "Grupo de edad": "70-79", "Casos confirmados": 1208, "Fallecidos confirmados": 89, "Letalidad": 7.367549668874172, "Texto": "7.37"}, {"index": 5, "Grupo de edad": ">=80", "Casos confirmados": 789, "Fallecidos confirmados": 132, "Letalidad": 16.730038022813687, "Texto": "16.73"}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
@@ -353,12 +451,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-80a9c8e3532c4191bb3bc5dd630ecab5"></div>
+<div id="altair-viz-6a41cc0f7ef4415ab5c104a3550ec50a"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-80a9c8e3532c4191bb3bc5dd630ecab5") {
-      outputDiv = document.getElementById("altair-viz-80a9c8e3532c4191bb3bc5dd630ecab5");
+    if (outputDiv.id !== "altair-viz-6a41cc0f7ef4415ab5c104a3550ec50a") {
+      outputDiv = document.getElementById("altair-viz-6a41cc0f7ef4415ab5c104a3550ec50a");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -433,12 +531,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-c55b739af91040cd8d7d44d66071a5d0"></div>
+<div id="altair-viz-6de5cd55fd994967a7c28c1eeee6f194"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c55b739af91040cd8d7d44d66071a5d0") {
-      outputDiv = document.getElementById("altair-viz-c55b739af91040cd8d7d44d66071a5d0");
+    if (outputDiv.id !== "altair-viz-6de5cd55fd994967a7c28c1eeee6f194") {
+      outputDiv = document.getElementById("altair-viz-6de5cd55fd994967a7c28c1eeee6f194");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -480,7 +578,7 @@ window.onload = wrap_img;
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "opacity": 0.8, "size": 30}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Pacientes UCI"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Pacientes UCI"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}, "height": {"step": 40}, "title": "Pacientes UCI presentes el 01/05/2020", "width": 600}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "text": {"type": "nominal", "field": "Texto"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Pacientes UCI"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Pacientes UCI"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}}], "data": {"name": "data-7e43d7a5006c8620566727ad5f49f31b"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-7e43d7a5006c8620566727ad5f49f31b": [{"index": 0, "Grupo de edad": "<=39", "Pacientes UCI": 50, "Porcentaje": 11.7, "Texto": "50 (11.7%)"}, {"index": 1, "Grupo de edad": "40-49", "Pacientes UCI": 44, "Porcentaje": 10.3, "Texto": "44 (10.3%)"}, {"index": 2, "Grupo de edad": "50-59", "Pacientes UCI": 108, "Porcentaje": 25.2, "Texto": "108 (25.2%)"}, {"index": 3, "Grupo de edad": "60-69", "Pacientes UCI": 115, "Porcentaje": 26.9, "Texto": "115 (26.9%)"}, {"index": 4, "Grupo de edad": ">=70", "Pacientes UCI": 111, "Porcentaje": 25.9, "Texto": "111 (25.9%)"}]}}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "opacity": 0.8, "size": 30}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Pacientes UCI"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Pacientes UCI"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}, "height": {"step": 40}, "title": "Pacientes UCI presentes el 11/05/2020", "width": 600}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"color": {"type": "nominal", "field": "Grupo de edad", "legend": null, "scale": {"scheme": "category10"}}, "order": {"type": "ordinal", "field": "index"}, "text": {"type": "nominal", "field": "Texto"}, "tooltip": [{"type": "nominal", "field": "Grupo de edad"}, {"type": "quantitative", "field": "Pacientes UCI"}, {"type": "quantitative", "field": "Porcentaje"}], "x": {"type": "quantitative", "field": "Pacientes UCI"}, "y": {"type": "nominal", "field": "Grupo de edad", "sort": ["<=39", "40-49", "50-59", "60-69", "70-79", "80-89", ">=90"]}}}], "data": {"name": "data-74ddf3afa5991d66165018b1902b4f94"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-74ddf3afa5991d66165018b1902b4f94": [{"index": 0, "Grupo de edad": "<=39", "Pacientes UCI": 62, "Porcentaje": 10.8, "Texto": "62 (10.8%)"}, {"index": 1, "Grupo de edad": "40-49", "Pacientes UCI": 73, "Porcentaje": 12.7, "Texto": "73 (12.7%)"}, {"index": 2, "Grupo de edad": "50-59", "Pacientes UCI": 136, "Porcentaje": 23.7, "Texto": "136 (23.7%)"}, {"index": 3, "Grupo de edad": "60-69", "Pacientes UCI": 166, "Porcentaje": 28.9, "Texto": "166 (28.9%)"}, {"index": 4, "Grupo de edad": ">=70", "Pacientes UCI": 137, "Porcentaje": 23.9, "Texto": "137 (23.9%)"}]}}, {"mode": "vega-lite"});
 </script>
 </div>
 
