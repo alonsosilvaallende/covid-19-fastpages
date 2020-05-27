@@ -164,6 +164,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#Fallecidos-confirmados-por-cada-100.000-habitantes-por-región">Fallecidos confirmados por cada 100.000 habitantes por región </a></li>
 <li class="toc-entry toc-h1"><a href="#Tasa-de-letalidad-por-región">Tasa de letalidad por región </a></li>
 <li class="toc-entry toc-h1"><a href="#Exámenes-informados-por-región-por-cada-100.000-habitantes-desde-el-9-de-abril">Exámenes informados por región por cada 100.000 habitantes desde el 9 de abril </a></li>
+<li class="toc-entry toc-h1"><a href="#Exámenes,-casos-confirmados,-y-fallecimientos-confirmados-por-región-desde-el-9-de-abril">Exámenes, casos confirmados, y fallecimientos confirmados por región desde el 9 de abril </a></li>
 <li class="toc-entry toc-h1"><a href="#Exámenes,-casos-confirmados,-y-fallecimientos-confirmados-por-región-por-cada-100.000-habitantes-desde-el-9-de-abril">Exámenes, casos confirmados, y fallecimientos confirmados por región por cada 100.000 habitantes desde el 9 de abril </a></li>
 <li class="toc-entry toc-h1"><a href="#Exámenes,-casos-confirmados,-y-fallecimientos-confirmados-por-país-de-la-OCDE-por-cada-1-millón-de-habitantes">Exámenes, casos confirmados, y fallecimientos confirmados por país de la OCDE por cada 1 millón de habitantes </a></li>
 <li class="toc-entry toc-h1"><a href="#Exámenes,-casos-confirmados,-y-fallecimientos-confirmados-por-país-de-la-OCDE-por-cada-1-millón-de-habitantes-en-los-últimos-7-días">Exámenes, casos confirmados, y fallecimientos confirmados por país de la OCDE por cada 1 millón de habitantes en los últimos 7 días </a></li>
@@ -2085,12 +2086,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-8c7cfbdf25ce43e9a9a8c211ff647e41"></div>
+<div id="altair-viz-42376814da654fefa002a9c8a18693cc"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-8c7cfbdf25ce43e9a9a8c211ff647e41") {
-      outputDiv = document.getElementById("altair-viz-8c7cfbdf25ce43e9a9a8c211ff647e41");
+    if (outputDiv.id !== "altair-viz-42376814da654fefa002a9c8a18693cc") {
+      outputDiv = document.getElementById("altair-viz-42376814da654fefa002a9c8a18693cc");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -2152,6 +2153,88 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Exámenes,-casos-confirmados,-y-fallecimientos-confirmados-por-región-desde-el-9-de-abril">
+<a class="anchor" href="#Ex%C3%A1menes,-casos-confirmados,-y-fallecimientos-confirmados-por-regi%C3%B3n-desde-el-9-de-abril" aria-hidden="true"><span class="octicon octicon-link"></span></a>Exámenes, casos confirmados, y fallecimientos confirmados por región desde el 9 de abril<a class="anchor-link" href="#Ex%C3%A1menes,-casos-confirmados,-y-fallecimientos-confirmados-por-regi%C3%B3n-desde-el-9-de-abril"> </a>
+</h1>
+<p>Nota: sólo se dispone de los datos de exámenes informados por región desde el 9 de abril</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-56c5fa3e2e9f4e03b547781044e9c10f"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-56c5fa3e2e9f4e03b547781044e9c10f") {
+      outputDiv = document.getElementById("altair-viz-56c5fa3e2e9f4e03b547781044e9c10f");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300, "stroke": null}, "concat": {"spacing": 1}}, "vconcat": [{"hconcat": [{"data": {"name": "data-eefc74871a5a778194f116cc7e296301"}, "mark": {"type": "text", "color": "green", "size": 16}, "encoding": {"text": {"type": "nominal", "field": "text"}}}, {"data": {"name": "data-a3a20e72979d25439c686c259ef0f98e"}, "mark": {"type": "text", "color": "blue", "size": 16}, "encoding": {"text": {"type": "nominal", "field": "text"}}}, {"data": {"name": "data-9270577d6cd06b01fe6bb25361ac224a"}, "mark": {"type": "text", "color": "red", "size": 16}, "encoding": {"text": {"type": "nominal", "field": "text"}}}, {"data": {"name": "data-c5a222102342ebd52a57c5836b13ac44"}, "mark": {"type": "text", "size": 16}, "encoding": {"text": {"type": "nominal", "field": "text"}}}]}, {"layer": [{"data": {"name": "data-0e93c2ec9ee673f35de6baa081387099"}, "mark": {"type": "bar", "color": "green", "opacity": 0.4, "size": 25}, "encoding": {"tooltip": [{"type": "nominal", "field": "Region"}, {"type": "quantitative", "field": "Tests"}, {"type": "quantitative", "field": "Casos"}, {"type": "quantitative", "field": "Fallecidos"}], "x": {"type": "quantitative", "axis": {"title": ""}, "field": "Tests"}, "y": {"type": "nominal", "field": "Region", "sort": {"field": "codigo", "order": "ascending"}}}}, {"data": {"name": "data-0e93c2ec9ee673f35de6baa081387099"}, "mark": {"type": "tick", "color": "green", "size": 25, "thickness": 2}, "encoding": {"tooltip": [{"type": "nominal", "field": "Region"}, {"type": "quantitative", "field": "Tests"}, {"type": "quantitative", "field": "Casos"}, {"type": "quantitative", "field": "Fallecidos"}], "x": {"type": "quantitative", "field": "Tests"}, "y": {"type": "nominal", "field": "Region", "sort": {"field": "codigo", "order": "ascending"}}}}, {"data": {"name": "data-0e93c2ec9ee673f35de6baa081387099"}, "mark": {"type": "tick", "color": "blue", "size": 25, "thickness": 2}, "encoding": {"tooltip": [{"type": "nominal", "field": "Region"}, {"type": "quantitative", "field": "Tests"}, {"type": "quantitative", "field": "Casos"}, {"type": "quantitative", "field": "Fallecidos"}], "x": {"type": "quantitative", "field": "Casos"}, "y": {"type": "nominal", "field": "Region", "sort": {"field": "codigo", "order": "ascending"}}}}, {"data": {"name": "data-0e93c2ec9ee673f35de6baa081387099"}, "mark": {"type": "tick", "color": "red", "size": 25, "thickness": 2}, "encoding": {"tooltip": [{"type": "nominal", "field": "Region"}, {"type": "quantitative", "field": "Tests"}, {"type": "quantitative", "field": "Casos"}, {"type": "quantitative", "field": "Fallecidos"}], "x": {"type": "quantitative", "field": "Fallecidos"}, "y": {"type": "nominal", "field": "Region", "sort": {"field": "codigo", "order": "ascending"}}}}], "height": {"step": 30}, "width": 700}], "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-eefc74871a5a778194f116cc7e296301": [{"text": "Ex\u00e1menes informados,"}], "data-a3a20e72979d25439c686c259ef0f98e": [{"text": "casos confirmados"}], "data-9270577d6cd06b01fe6bb25361ac224a": [{"text": "y fallecidos confirmados"}], "data-c5a222102342ebd52a57c5836b13ac44": [{"text": "por regi\u00f3n desde el 9 de abril"}], "data-0e93c2ec9ee673f35de6baa081387099": [{"Region": "Metropolitana", "Fallecidos": 581, "Casos": 63463, "Tests": 296569, "codigo": 1}, {"Region": "Biobio", "Fallecidos": 8, "Casos": 1126, "Tests": 29566, "codigo": 2}, {"Region": "Los  Lagos", "Fallecidos": 11, "Casos": 466, "Tests": 24095, "codigo": 3}, {"Region": "Valparaiso", "Fallecidos": 56, "Casos": 2351, "Tests": 19057, "codigo": 4}, {"Region": "Araucania", "Fallecidos": 30, "Casos": 1247, "Tests": 15266, "codigo": 5}, {"Region": "Maule", "Fallecidos": 13, "Casos": 947, "Tests": 14621, "codigo": 6}, {"Region": "Antofagasta", "Fallecidos": 24, "Casos": 2060, "Tests": 10724, "codigo": 7}, {"Region": "Nuble", "Fallecidos": 17, "Casos": 613, "Tests": 8279, "codigo": 8}, {"Region": "Tarapaca", "Fallecidos": 11, "Casos": 1785, "Tests": 7031, "codigo": 9}, {"Region": "O'Higgins", "Fallecidos": 14, "Casos": 648, "Tests": 4931, "codigo": 10}, {"Region": "Los  Rios", "Fallecidos": 4, "Casos": 195, "Tests": 4743, "codigo": 11}, {"Region": "Magallanes", "Fallecidos": 15, "Casos": 771, "Tests": 4518, "codigo": 12}, {"Region": "Arica  y  Parinacota", "Fallecidos": 7, "Casos": 478, "Tests": 4495, "codigo": 13}, {"Region": "Coquimbo", "Fallecidos": 2, "Casos": 399, "Tests": 4474, "codigo": 14}, {"Region": "Atacama", "Fallecidos": 0, "Casos": 189, "Tests": 4393, "codigo": 15}, {"Region": "Aysen", "Fallecidos": 0, "Casos": 5, "Tests": 1341, "codigo": 16}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
