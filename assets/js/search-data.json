@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "COVID-19 por comuna",
-            "content": "data = data.reset_index() .",
+            "content": "",
             "url": "https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/05/28/Comunas.html",
             "relUrl": "/jupyter/2020/05/28/Comunas.html",
             "date": " • May 28, 2020"
