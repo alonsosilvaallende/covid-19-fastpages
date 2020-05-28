@@ -2,8 +2,8 @@
   
     
         "post0": {
-            "title": "COVID-19 por comuna",
-            "content": "",
+            "title": "Draft: COVID-19 por comuna",
+            "content": "Nuevos casos confirmados por comuna en la R.M . Fuente: Ministerio de Ciencia, Ministerio de Salud . No hay datos diarios de nuevos confirmados por comuna. Estos son estimados a través de una interpolación lineal entre las proporciones observadas entre los dos informes más cercanos en el tiempo y aplicados a casos confirmados regionales. | . Fuente: Ministerio de Ciencia, Ministerio de Salud . No hay datos diarios de nuevos confirmados por comuna. Estos son estimados a través de una interpolación lineal entre las proporciones observadas entre los dos informes más cercanos en el tiempo y aplicados a casos confirmados regionales. | . Advertencia . El número de casos confirmados/informados no representa exactamente el número de casos/contagios con Covid-19 reales. Estos últimos valores no son conocidos por límites de testeo. .",
             "url": "https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/05/28/Comunas.html",
             "relUrl": "/jupyter/2020/05/28/Comunas.html",
             "date": " • May 28, 2020"
