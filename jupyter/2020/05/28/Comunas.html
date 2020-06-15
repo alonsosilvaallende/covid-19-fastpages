@@ -191,12 +191,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-30368dad08d94818882605ec653d0b64"></div>
+<div id="altair-viz-8ff31b4171cf4272bc19f41eeb8e79cd"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-30368dad08d94818882605ec653d0b64") {
-      outputDiv = document.getElementById("altair-viz-30368dad08d94818882605ec653d0b64");
+    if (outputDiv.id !== "altair-viz-8ff31b4171cf4272bc19f41eeb8e79cd") {
+      outputDiv = document.getElementById("altair-viz-8ff31b4171cf4272bc19f41eeb8e79cd");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -268,6 +268,77 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+
+<div id="altair-viz-d3e35bd644f44189a52ee55b0da28f0c"></div>
+<script type="text/javascript">
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-d3e35bd644f44189a52ee55b0da28f0c") {
+      outputDiv = document.getElementById("altair-viz-d3e35bd644f44189a52ee55b0da28f0c");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
+    };
+
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
+    } else {
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": {"type": "bar", "opacity": 0.8, "size": 25}, "encoding": {"color": {"type": "nominal", "field": "Comuna", "legend": null, "scale": {"scheme": "tableau20"}}, "tooltip": [{"type": "nominal", "field": "Comuna"}, {"type": "quantitative", "field": "Poblacion"}, {"type": "quantitative", "field": "Fallecidos confirmados"}], "x": {"type": "quantitative", "field": "Fallecidos confirmados"}, "y": {"type": "nominal", "field": "Comuna", "sort": "-x"}}, "height": {"step": 30}, "title": "Total fallecidos confirmados por comuna de la R.M. al 12/06", "width": 600}, {"mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 3}, "encoding": {"color": {"type": "nominal", "field": "Comuna", "legend": null, "scale": {"scheme": "tableau20"}}, "text": {"type": "quantitative", "field": "Fallecidos confirmados"}, "tooltip": [{"type": "nominal", "field": "Comuna"}, {"type": "quantitative", "field": "Poblacion"}, {"type": "quantitative", "field": "Fallecidos confirmados"}], "x": {"type": "quantitative", "field": "Fallecidos confirmados"}, "y": {"type": "nominal", "field": "Comuna", "sort": "-x"}}}], "data": {"name": "data-56684b7dff46e1f8c018941825c7c875"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json", "datasets": {"data-56684b7dff46e1f8c018941825c7c875": [{"Comuna": "Alhue", "Poblacion": 7405.0, "Fallecidos confirmados": 0.0}, {"Comuna": "Buin", "Poblacion": 109641.0, "Fallecidos confirmados": 24.0}, {"Comuna": "Calera de Tango", "Poblacion": 28525.0, "Fallecidos confirmados": 0.0}, {"Comuna": "Cerrillos", "Poblacion": 88956.0, "Fallecidos confirmados": 19.0}, {"Comuna": "Cerro Navia", "Poblacion": 142465.0, "Fallecidos confirmados": 77.0}, {"Comuna": "Colina", "Poblacion": 180353.0, "Fallecidos confirmados": 31.0}, {"Comuna": "Conchali", "Poblacion": 139195.0, "Fallecidos confirmados": 69.0}, {"Comuna": "Curacavi", "Poblacion": 36430.0, "Fallecidos confirmados": 4.0}, {"Comuna": "El Bosque", "Poblacion": 172000.0, "Fallecidos confirmados": 47.0}, {"Comuna": "El Monte", "Poblacion": 40014.0, "Fallecidos confirmados": 6.0}, {"Comuna": "Estacion Central", "Poblacion": 206792.0, "Fallecidos confirmados": 41.0}, {"Comuna": "Huechuraba", "Poblacion": 112528.0, "Fallecidos confirmados": 52.0}, {"Comuna": "Independencia", "Poblacion": 142065.0, "Fallecidos confirmados": 111.0}, {"Comuna": "Isla de Maipo", "Poblacion": 40171.0, "Fallecidos confirmados": 6.0}, {"Comuna": "La Cisterna", "Poblacion": 100434.0, "Fallecidos confirmados": 32.0}, {"Comuna": "La Florida", "Poblacion": 402433.0, "Fallecidos confirmados": 157.0}, {"Comuna": "La Granja", "Poblacion": 122557.0, "Fallecidos confirmados": 72.0}, {"Comuna": "La Pintana", "Poblacion": 189335.0, "Fallecidos confirmados": 78.0}, {"Comuna": "La Reina", "Poblacion": 100252.0, "Fallecidos confirmados": 28.0}, {"Comuna": "Lampa", "Poblacion": 126898.0, "Fallecidos confirmados": 18.0}, {"Comuna": "Las Condes", "Poblacion": 330759.0, "Fallecidos confirmados": 94.0}, {"Comuna": "Lo Barnechea", "Poblacion": 124076.0, "Fallecidos confirmados": 19.0}, {"Comuna": "Lo Espejo", "Poblacion": 103865.0, "Fallecidos confirmados": 55.0}, {"Comuna": "Lo Prado", "Poblacion": 104403.0, "Fallecidos confirmados": 45.0}, {"Comuna": "Macul", "Poblacion": 134635.0, "Fallecidos confirmados": 48.0}, {"Comuna": "Maipu", "Poblacion": 578605.0, "Fallecidos confirmados": 113.0}, {"Comuna": "Maria Pinto", "Poblacion": 14926.0, "Fallecidos confirmados": 1.0}, {"Comuna": "Melipilla", "Poblacion": 141612.0, "Fallecidos confirmados": 24.0}, {"Comuna": "Nunoa", "Poblacion": 250192.0, "Fallecidos confirmados": 65.0}, {"Comuna": "Padre Hurtado", "Poblacion": 74188.0, "Fallecidos confirmados": 16.0}, {"Comuna": "Paine", "Poblacion": 82766.0, "Fallecidos confirmados": 5.0}, {"Comuna": "Pedro Aguirre Cerda", "Poblacion": 107803.0, "Fallecidos confirmados": 48.0}, {"Comuna": "Penaflor", "Poblacion": 101058.0, "Fallecidos confirmados": 21.0}, {"Comuna": "Penalolen", "Poblacion": 266798.0, "Fallecidos confirmados": 93.0}, {"Comuna": "Pirque", "Poblacion": 30433.0, "Fallecidos confirmados": 1.0}, {"Comuna": "Providencia", "Poblacion": 157749.0, "Fallecidos confirmados": 53.0}, {"Comuna": "Pudahuel", "Poblacion": 253139.0, "Fallecidos confirmados": 68.0}, {"Comuna": "Puente Alto", "Poblacion": 645909.0, "Fallecidos confirmados": 156.0}, {"Comuna": "Quilicura", "Poblacion": 254694.0, "Fallecidos confirmados": 47.0}, {"Comuna": "Quinta Normal", "Poblacion": 136368.0, "Fallecidos confirmados": 57.0}, {"Comuna": "Recoleta", "Poblacion": 190075.0, "Fallecidos confirmados": 106.0}, {"Comuna": "Renca", "Poblacion": 160847.0, "Fallecidos confirmados": 55.0}, {"Comuna": "San Bernardo", "Poblacion": 334836.0, "Fallecidos confirmados": 91.0}, {"Comuna": "San Joaquin", "Poblacion": 103485.0, "Fallecidos confirmados": 55.0}, {"Comuna": "San Jose de Maipo", "Poblacion": 18644.0, "Fallecidos confirmados": 14.0}, {"Comuna": "San Miguel", "Poblacion": 133059.0, "Fallecidos confirmados": 47.0}, {"Comuna": "San Pedro", "Poblacion": 11953.0, "Fallecidos confirmados": 2.0}, {"Comuna": "San Ramon", "Poblacion": 86510.0, "Fallecidos confirmados": 71.0}, {"Comuna": "Santiago", "Poblacion": 503147.0, "Fallecidos confirmados": 105.0}, {"Comuna": "Talagante", "Poblacion": 81838.0, "Fallecidos confirmados": 9.0}, {"Comuna": "Tiltil", "Poblacion": 21477.0, "Fallecidos confirmados": 3.0}, {"Comuna": "Vitacura", "Poblacion": 96774.0, "Fallecidos confirmados": 14.0}]}}, {"mode": "vega-lite"});
+</script>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
