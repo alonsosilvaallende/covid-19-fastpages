@@ -185,203 +185,6 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">county_cumulative_cases_RM</span><span class="o">.</span><span class="n">tail</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Comuna</th>
-      <th>2020-03-30</th>
-      <th>2020-04-01</th>
-      <th>2020-04-03</th>
-      <th>2020-04-06</th>
-      <th>2020-04-08</th>
-      <th>2020-04-10</th>
-      <th>2020-04-13</th>
-      <th>2020-04-15</th>
-      <th>2020-04-17</th>
-      <th>...</th>
-      <th>2020-05-11</th>
-      <th>2020-05-15</th>
-      <th>2020-05-18</th>
-      <th>2020-05-22</th>
-      <th>2020-05-25</th>
-      <th>2020-05-29</th>
-      <th>2020-06-01</th>
-      <th>2020-06-05</th>
-      <th>2020-06-08</th>
-      <th>2020-06-12</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>129</th>
-      <td>San Ramon</td>
-      <td>0.0</td>
-      <td>6.0</td>
-      <td>9.0</td>
-      <td>9.0</td>
-      <td>12.0</td>
-      <td>18.0</td>
-      <td>20.0</td>
-      <td>27.0</td>
-      <td>32.0</td>
-      <td>...</td>
-      <td>381.0</td>
-      <td>638.0</td>
-      <td>719.0</td>
-      <td>1069.0</td>
-      <td>1329.0</td>
-      <td>1543.0</td>
-      <td>1698.0</td>
-      <td>1841.0</td>
-      <td>2107.0</td>
-      <td>2332.0</td>
-    </tr>
-    <tr>
-      <th>130</th>
-      <td>Santiago</td>
-      <td>127.0</td>
-      <td>156.0</td>
-      <td>173.0</td>
-      <td>234.0</td>
-      <td>271.0</td>
-      <td>321.0</td>
-      <td>375.0</td>
-      <td>404.0</td>
-      <td>463.0</td>
-      <td>...</td>
-      <td>1873.0</td>
-      <td>2627.0</td>
-      <td>2961.0</td>
-      <td>3935.0</td>
-      <td>4618.0</td>
-      <td>5617.0</td>
-      <td>6278.0</td>
-      <td>7089.0</td>
-      <td>7786.0</td>
-      <td>8818.0</td>
-    </tr>
-    <tr>
-      <th>131</th>
-      <td>Talagante</td>
-      <td>0.0</td>
-      <td>5.0</td>
-      <td>6.0</td>
-      <td>11.0</td>
-      <td>14.0</td>
-      <td>18.0</td>
-      <td>21.0</td>
-      <td>24.0</td>
-      <td>26.0</td>
-      <td>...</td>
-      <td>68.0</td>
-      <td>88.0</td>
-      <td>105.0</td>
-      <td>155.0</td>
-      <td>183.0</td>
-      <td>224.0</td>
-      <td>276.0</td>
-      <td>343.0</td>
-      <td>432.0</td>
-      <td>518.0</td>
-    </tr>
-    <tr>
-      <th>132</th>
-      <td>Tiltil</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>0.0</td>
-      <td>4.0</td>
-      <td>4.0</td>
-      <td>4.0</td>
-      <td>4.0</td>
-      <td>4.0</td>
-      <td>...</td>
-      <td>13.0</td>
-      <td>21.0</td>
-      <td>24.0</td>
-      <td>40.0</td>
-      <td>69.0</td>
-      <td>112.0</td>
-      <td>121.0</td>
-      <td>134.0</td>
-      <td>140.0</td>
-      <td>185.0</td>
-    </tr>
-    <tr>
-      <th>133</th>
-      <td>Vitacura</td>
-      <td>83.0</td>
-      <td>90.0</td>
-      <td>100.0</td>
-      <td>114.0</td>
-      <td>114.0</td>
-      <td>119.0</td>
-      <td>127.0</td>
-      <td>128.0</td>
-      <td>130.0</td>
-      <td>...</td>
-      <td>251.0</td>
-      <td>325.0</td>
-      <td>370.0</td>
-      <td>485.0</td>
-      <td>569.0</td>
-      <td>646.0</td>
-      <td>712.0</td>
-      <td>780.0</td>
-      <td>859.0</td>
-      <td>936.0</td>
-    </tr>
-  </tbody>
-</table>
-<p>5 rows × 26 columns</p>
-</div>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
 
 <div class="output_wrapper">
 <div class="output">
@@ -391,12 +194,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-01770c7dc26a4a7aa7addfdfe33d69af"></div>
+<div id="altair-viz-bf0c113426a3490a862cf503a4059222"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-01770c7dc26a4a7aa7addfdfe33d69af") {
-      outputDiv = document.getElementById("altair-viz-01770c7dc26a4a7aa7addfdfe33d69af");
+    if (outputDiv.id !== "altair-viz-bf0c113426a3490a862cf503a4059222") {
+      outputDiv = document.getElementById("altair-viz-bf0c113426a3490a862cf503a4059222");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -480,23 +283,6 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">regional_cumulative_cases_RM</span> <span class="o">=</span> <span class="n">regional_cumulative_cases</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s2">"Region=='Metropolitana'"</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">"Region"</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
 
 <div class="output_wrapper">
 <div class="output">
@@ -506,12 +292,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-df959a82f76047e197c75bfae5517b23"></div>
+<div id="altair-viz-efda07fb3898418985c54e6e4a5e29b7"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-df959a82f76047e197c75bfae5517b23") {
-      outputDiv = document.getElementById("altair-viz-df959a82f76047e197c75bfae5517b23");
+    if (outputDiv.id !== "altair-viz-efda07fb3898418985c54e6e4a5e29b7") {
+      outputDiv = document.getElementById("altair-viz-efda07fb3898418985c54e6e4a5e29b7");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -604,12 +390,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-b2133e9be2ba48e6baff3ffa2499b080"></div>
+<div id="altair-viz-7e10d9bbbbbd414197e8314ca34c56fd"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-b2133e9be2ba48e6baff3ffa2499b080") {
-      outputDiv = document.getElementById("altair-viz-b2133e9be2ba48e6baff3ffa2499b080");
+    if (outputDiv.id !== "altair-viz-7e10d9bbbbbd414197e8314ca34c56fd") {
+      outputDiv = document.getElementById("altair-viz-7e10d9bbbbbd414197e8314ca34c56fd");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -692,12 +478,12 @@ window.onload = wrap_img;
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-16260faf7ea44bcdbe919cc602ca2255"></div>
+<div id="altair-viz-604029370d454b5387fa012bcb638511"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-16260faf7ea44bcdbe919cc602ca2255") {
-      outputDiv = document.getElementById("altair-viz-16260faf7ea44bcdbe919cc602ca2255");
+    if (outputDiv.id !== "altair-viz-604029370d454b5387fa012bcb638511") {
+      outputDiv = document.getElementById("altair-viz-604029370d454b5387fa012bcb638511");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
