@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Fallecidos DEIS por comuna",
-            "content": "Última actualización: 29/06/2020. . Fallecidos DEIS por comuna . bars = alt.Chart(deaths_long_format).mark_bar(opacity=0.7, size=25).encode( x = alt.X(&#39;Fallecidos:Q&#39;, stack=&#39;zero&#39;), y = alt.Y(&#39;Comuna&#39;, sort=&#39;-x&#39;), tooltip = [&#39;Comuna&#39;, &#39;Fallecidos&#39;], color = alt.Color(&#39;Causa&#39;, sort=[&#39;Confirmado&#39;,&#39;Sospechoso&#39;]), order = alt.Order(&#39;Causa&#39;) ) text = alt.Chart(deaths_long_format).mark_text(dx=-11, dy=0, color=&quot;#636363&quot;).encode( x=alt.X(&#39;Fallecidos:Q&#39;, stack=&#39;zero&#39;), y=alt.Y(&#39;Comuna&#39;, sort=&#39;-x&#39;), color=alt.Color(&#39;Causa&#39;, sort=[&#39;Confirmado&#39;,&#39;Sospechoso&#39;]), order = alt.Order(&quot;Causa&quot;), text=alt.Text(&quot;Fallecidos&quot;, format=&#39;,.0f&#39;) ) (bars+text).properties( title = f&quot;Total fallecidos DEIS por comuna de la R.M. al {pd.to_datetime(&#39;2020-06-28&#39;).strftime(&#39;%d/%m&#39;)}&quot;, width = 600, height = alt.Step(30) ) .",
+            "content": "Última actualización: 29/06/2020. . Fallecidos DEIS por comuna .",
             "url": "https://alonsosilvaallende.github.io/covid-19-fastpages/jupyter/2020/06/30/Fallecidos-DEIS-por-comuna.html",
             "relUrl": "/jupyter/2020/06/30/Fallecidos-DEIS-por-comuna.html",
             "date": " • Jun 30, 2020"
