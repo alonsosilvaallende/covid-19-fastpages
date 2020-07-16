@@ -113,7 +113,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      10 min read
     
 </span></p>
 
@@ -256,7 +256,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Sin embargo, hay comunas con mucha mayor población que otras. Por ejemplo, Puente Alto tiene 645.909 habitantes mientras Vitacura sólo tiene 96.774 habitantes (según proyección Censo 2017). Por ese motivo, es interesante estudiar la tasa de mortalidad observada que se es la cantidad de defunciones por causa COVID por 100.000 habitantes.</p>
+<p>No obstante, hay comunas con mucha mayor población que otras. Por ejemplo, Puente Alto tiene 645.909 habitantes mientras Vitacura sólo tiene 96.774 habitantes (según proyección Censo 2017). Por ese motivo, es interesante estudiar la tasa de mortalidad observada que es la cantidad de defunciones por causa COVID por 100.000 habitantes.</p>
 
 </div>
 </div>
@@ -338,19 +338,19 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Sin embargo, la pirámide poblacional de cada comuna son bastante distintas. Ver por ejemplo pirámide poblacional de La Pintana y Vitacura en el sitio <a href="https://es.datachile.io/">Data Chile</a> (gracias a Eduardo Gallardo Lara por la referencia). Esto es muy importante en el caso de una enfermedad como COVID dónde la edad y el sexo son variables importantes (ver <a href="https://twitter.com/alonsosilva/status/1280080814378823682">aquí</a>).</p>
+<p>Sin embargo, las pirámides poblacionales de las comunas consideradas son bastante distintas. Ver por ejemplo pirámide poblacional de La Pintana y Vitacura en el sitio <a href="https://es.datachile.io/">Data Chile</a> (gracias a Eduardo Gallardo Lara por la referencia). Esto es muy importante en el caso de una enfermedad como COVID dónde la edad y el sexo son variables importantes (ver <a href="https://twitter.com/alonsosilva/status/1280080814378823682">aquí</a>).</p>
 <p>La <a href="https://www.who.int/es/">organización mundial de la salud</a> lo explica en la sección "Estandarización de las tasas de mortalidad"  (gracias a <a href="https://twitter.com/JavieraTuitera">JavieraTuitera</a> por la referencia):</p>
 <blockquote>
 <p>Las tasas de mortalidad general en países con diferente esperanza de vida pueden ofrecer la falsa idea de mayor riesgo de muerte en los países con mayor número de adultos mayores. La estandarización por edad de esas tasas anula el efecto de esa composición etaria desigual en la población y permite una comparación más adecuada en ese caso. Para evitar conclusiones erróneas en la comparación de tasas generales, se han usado métodos matemáticos para anular el efecto de esa distribución demográfica desigual. El método más utilizado es la estandarización directa de las tasas</p>
 </blockquote>
 <p>Artículo completo <a href="https://www.paho.org/hq/index.php?option=com_content&amp;view=article&amp;id=14402:health-indicators-conceptual-and-operational-considerations-section-2&amp;Itemid=0&amp;limitstart=4&amp;lang=es">acá</a>.
-Por lo tanto, una solución es ajusta por edad y sexo considerando una población estándar. La elección de qué constituye una población estándar es importante sin lugar a dudas. El proceso consiste en:</p>
+Por lo tanto, una solución es ajusta por edad y sexo considerando una población estándar. La elección de qué constituye una población estándar es importante sin lugar a dudas. En lo siguiente consideramos población estándar la población de Chile para el censo 2002. Sigo en eso al DEIS que tomó esa decisión y esa población estándar se suele mantener por varias décadas para tener un punto de referencia común para estudiar varias enfermedades. En todo caso el cálculo se puede hacer para el censo 2017 también (ver <a href="https://twitter.com/alonsosilva/status/1283722585189031936">aquí</a>). Para obtener la tasa de mortalidad ajustada por edad y sexo se debe calcular:</p>
 <ul>
 <li>Número de defunciones en cada grupo etario/sexo.</li>
 <li>Población en cada grupo etario/sexo.</li>
 <li>Número de defunciones dividido por población, para cada grupo etario/sexo (la base suele ser de 100.000 habitantes).</li>
-<li>Población estándar (acá se utiliza la población de Chile del censo 2002). </li>
-<li>Para obtener la tasa ajustada, primero se multiplica la tasa específica de cada grupo etario/sexo por la población estándar. La tasa ajustada por edad/100 000 es la suma del producto de cada grupo etario/sexo.</li>
+<li>Población estándar (acá se utiliza la población de Chile del censo 2002 siguiendo al DEIS).</li>
+<li>Para obtener la tasa ajustada, se debe ponderar la tasa de mortalidad observada por grupo etario-sexo por las proporciones de la población estándar.</li>
 </ul>
 
 </div>
@@ -791,7 +791,7 @@ Por lo tanto, una solución es ajusta por edad y sexo considerando una població
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<p>La tasa de mortalidad ajustada se obtiene al ponderar la tasa de mortalidad observada por grupo etario-sexo por las proporciones de la población estándar para una tasa ajustada de Maipú de 67.6.</p>
+<p>La tasa de mortalidad ajustada se obtiene al ponderar la tasa de mortalidad observada por grupo etario-sexo por las proporciones de la población estándar para obtener una tasa ajustada para Maipú de 67.6 defunciones sobre 100.000 habitantes para una población estándar.</p>
 
 </div>
 
